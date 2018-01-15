@@ -1,0 +1,162 @@
+/* Main Styles */
+
+body {
+    max-width: 1920px;
+    background: oldlace; 
+    font-family: "Sansita", sans-serif;
+    color: rgb(46, 46, 104)
+    font-size: 16px;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Asar", serif;
+    color: rgb(46, 46, 104)
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0;
+    padding: 0;
+}
+    
+ /* Header */
+    
+header {
+    padding: 10px 20px;
+    height: 50px;
+    color: #333132;
+    background-color: rgb(212, 205, 192);
+}
+
+ /* Navigation */
+
+#icon {
+    max-height: 100%;
+}
+
+nav {
+    float: right;
+    padding: 16px 0px 16px 16px;
+    text-align: center;
+}
+
+nav ul {
+    height: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 .25em;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li:last-child {
+    margin-right: .5em;
+}
+
+nav ul li:first-child {
+    margin-left: .5em;
+}
+
+nav li a {
+    text-decoration: none;
+    background: linear-gradient(90deg);
+    color: rgb(46, 46, 104);
+    padding: 15px 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .2s ease-out;
+}
+
+nav li a:hover {
+    background-color: rgb(46, 46, 104);
+    transition: all .3s ease-in;
+    color:oldlace;
+    transform: scaleX(5px);
+}
+
+nav li a:active {
+
+}
+
+a:hover {
+    box-shadow: 0 2.5px 5px 0 rgba(32,32,32,.65);
+}
+
+#icon {
+    height: 60px;
+}
+
+/* Body */
+
+/* Footer */
+
+footer {
+    display: block;
+    height: 25px;
+    padding: 10px 20px;
+    color: #333132;
+    background-color: rgb(212, 205, 192)
+}
+
+#copyright { 
+    max-height: 100%;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Social Icons */
+
+.social {
+    margin: 2em;
+}
+
+.social li {
+    display: inline-block;
+    height: 75px;
+    margin: 10px 10px;
+}
+
+.social li a {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 50%;
+    max-height: 75px;
+}
+ 
