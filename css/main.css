@@ -5,16 +5,16 @@
 
 body {
     max-width: 1920px;
-    background: oldlace; 
+    background: rgb(245,245,245);
     font-family: "Sansita", sans-serif;
-    color: rgb(46, 46, 104)
+    color: #3B494C;
     font-size: 16px;
     margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Titillium Web', sans-serif;
-    color: rgb(46, 46, 104)
+    color: #3B494C;
 }
 
 h1 {
@@ -59,72 +59,54 @@ img {
     
 header {
     padding: 10px 20px;
-    height: 50px;
-    color: #333132;
-    background-color: rgb(212, 205, 192);
+    height: 80px;
+    color: #3B494C;
 }
 
  /* Navigation */
 
 #icon {
-    max-height: 100%;
+    height: 80px;
+    padding: 0px 10px;
+    float: left;
 }
 
-nav {
-    float: right;
-    padding: 16px 0px 16px 16px;
-    text-align: center;
-}
+nav #name {
+    float: left;
+    margin: .6em 2em 0;
+    vertical-align: center;
+} 
 
 nav ul {
-    height: 100%;
-}
-
-nav ul li {
-    list-style: none;
-    margin: 0 .25em;
+    list-style-type: none;
     padding: 0;
-    display: inline-block;
+    margin: 0;
 }
 
-nav ul li:last-child {
-    margin-right: .5em;
+nav #li4, nav #li3, nav #li5, nav #li6 {
+    float: right;
+    margin-top: 1.8em;
 }
 
-nav ul li:first-child {
-    margin-left: .5em;
-}
-
-nav li a {
+li a {
     text-decoration: none;
-    background: linear-gradient(90deg);
-    color: rgb(46, 46, 104);
-    padding: 15px 15px;
-    border-radius: 10px;
+    border: solid 2px rgb(245,245,245);
+    color: #3B494C;
+    padding: 35px 15px;
     text-align: center;
-    font-weight: bold;
-    transition: all .2s ease-out;
+    transition: all .1s ease-out;
     font-size: large;
 }
 
-nav li a:hover {
-    background-color: rgb(46, 46, 104);
-    transition: all .3s ease-in;
-    color:oldlace;
-    transform: scaleX(5px);
+li a:hover {
+    border-left: solid 2px #08B1FC;
+    border-right: solid 2px #08B1FC;
+    border-bottom: solid 5px #08B1FC;
+    background-color: rgb(250, 250, 250);
+    transition: all .2s ease-in;
+    color:#08B1FC;
 }
 
-nav li a:active {
-
-}
-
-a:hover {
-    box-shadow: 0 2.5px 5px 0 rgba(32,32,32,.65);
-}
-
-#icon {
-    height: 60px;
-}
 
 /* Body */
 #story{
