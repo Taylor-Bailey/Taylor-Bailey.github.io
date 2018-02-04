@@ -9,7 +9,7 @@ body {
     font-family: "Sansita", sans-serif;
     color: #3B494C;
     font-size: 16px;
-    margin: 0;
+    margin: 0 10em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3em;
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
@@ -58,9 +58,9 @@ img {
  /* Header */
     
 header {
-    padding: 10px 2em;
     height: 80px;
     color: #3B494C;
+    margin-bottom: 3em;
 }
 
  /* Navigation */
@@ -69,19 +69,14 @@ header {
     height: 100%;
 }
 
-#icon {
-    height: 80px;
-    float: left;
-    margin-left: 13em;
-}
-
 nav #name {
     float: left;
-    margin-top: .6em;
+    height: 100%;
 } 
 
 nav #name li h2 {
-    margin: .25em 0;
+    margin: .1em 0 .1em 0;
+    font-size: 70px;
 }
 
 .sticky {
@@ -96,7 +91,7 @@ nav ul li{
     margin: 0;
 }
 
-nav #li4, nav #li3, nav #li5, nav #li6 {
+nav #li1, nav #li2, nav #li3, nav #li4{
     float: right;
     margin-top: 3.8em;
 }
@@ -126,12 +121,73 @@ li a:hover {
 /* Body */
 
 main {
-    padding: 1em 2em;
+    padding: 1em 0;
 }
 
-#story{
-    max-width: 100%;
-    height: 100%;
+/* <T> */
+#icon-main {
+    height: 500px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+}
+
+#icon {
+    height: 80px;
+    float: left;
+    display: float;
+    margin-right: auto;
+}
+
+/* Arrow */
+i {
+    border: solid #08B1FC;
+    border-width: 0 1.5px 1.5px 0;
+    display: block;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    height: 25px;
+    width: 25px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Content */
+#story {
+    /* padding-top: 2em; */
+    margin-top: 6em;
+    border-top: solid 1px #08B1FC;
+}
+
+#story p {
+    padding-bottom: 3em;
+}
+
+main article p:last-child {
+    padding-bottom: 3em;
+}
+main p:last-child {
+    border-bottom: 1px solid #08B1FC;
 }
 
 /* Footer */
@@ -140,15 +196,15 @@ footer {
     display: inline-block;
     width: 100%;
     height: 25px;
-    padding: 10px 20px;
-    color: #42C3FF;
-    background-color: #3B494C;
+    padding: 10px 0;
+    color: #3B494C;
+    border-top: 1px solid #08B1FC;
     margin-top: auto;
 }
 
 #copyright { 
     font-weight: bold;
-    
+    text-align: center;
     padding: 0;
 }
 
