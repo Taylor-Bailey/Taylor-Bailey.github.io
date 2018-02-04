@@ -1,0 +1,24 @@
+#blog-bin {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    padding: 0 0 2em 0;
+}
+
+.blog-item {
+    border: 1px solid #08B1FC;
+    width: 20%;
+    margin-top: .5em;
+    padding: 0 1em 1em;
+}
+.blog-item header {
+    height: 65px;
+    margin: 0;
+}
+.blog-item h4, .blog-item h5 {
+    text-align: center;
+    margin: .25em;
+}
+.blog-item p:last-child {
+    padding-bottom: .25em;
+}
