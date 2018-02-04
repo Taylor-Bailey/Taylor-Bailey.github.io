@@ -215,26 +215,3 @@ footer {
     padding: 0;
 }
 
-/* Social Icons */
-.flex-social {
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: center;
-    height: 55vh;
-}
-
-.flex-social li {
-    list-style: none;
-}
-
-.flex-social img {
-    width: 100%;
-}
-
-.flex-social a {
-    padding: 0;
-}
-
-.social {
-    text-align: center;
-}
