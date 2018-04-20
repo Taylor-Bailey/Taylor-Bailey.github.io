@@ -1,0 +1,95 @@
+// palette //
+$lightblue: #81d7ff; 
+$blue: #3FC1FF;
+$darkblue: #2A7BFF;
+$black: #3b494c;
+$white: #fcfcfc;
+
+
+//font family//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web');
+
+//main styles//
+body {
+    font-family: "Open Sans", "Arial";
+    background-color: $white;
+    color: $black;
+}
+
+
+//Landing Div//
+.landingContainer {
+    height: 800px;
+    background-color: $white;
+}
+
+//Navigation//
+.container nav {
+    margin:auto !important;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    color: $black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    margin-top: 20px;    
+    padding-left: 0px;
+    padding-bottom: 2px;
+}
+
+nav li a {
+    font-family: "Titillium Web";
+    text-decoration: none;
+    font-weight: 800;
+    color: $black;
+    line-height: .4;
+    // padding: 8px 0px !important;
+}
+
+nav li a:hover {
+    color: $black !important;
+    border-bottom: 4px solid $blue ;
+    padding-bottom: 0px;
+    transition: ease-in-out .2s;
+
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: $black;
+}
+
+li:not(:last-child) {
+    margin-right: 15px;
+}
+
+@media only screen and (min-width: 1200px){
+nav {
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
+
+@media only screen and (min-width: 1200px){
+    ol{
+        padding-left: 0;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
+    margin-right: 40px;
+}
+}
