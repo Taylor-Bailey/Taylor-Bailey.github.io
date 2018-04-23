@@ -25,7 +25,7 @@ body {
 
 //Navigation//
 .container nav {
-    margin:auto !important;
+    margin-bottom: 3em !important;
 }
 
 nav {
@@ -57,10 +57,9 @@ nav li a {
 
 nav li a:hover {
     color: $black !important;
-    border-bottom: 4px solid $blue ;
+    border-bottom: 4px solid rgb(118, 170, 255);
     padding-bottom: 0px;
     transition: ease-in-out .2s;
-
 }
 
 li {
@@ -87,9 +86,65 @@ nav {
     }
 }
 
+@media only screen and (max-width: 398px){
+    ol{
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 1200px){
 ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
     margin-right: 40px;
 }
+}
+
+//Landing Window//
+.landingWindow {
+    height: 200px;
+    // border: 1px solid $blue;
+}
+
+#devWindow{
+    background-image:url();
+}
+
+#artWindow{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/WerewizardWM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+#artWindow:hover{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/WerewizardWM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+#devWindow{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/pantry-mockup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+#devWindow:hover{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/pantry-mockup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+
+.landingText{
+    color: $white;
+    font-family: "Titillium Web";
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 4px;
 }

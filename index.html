@@ -12,18 +12,28 @@
 <body>
     <header class="landingContainer">
         <div class="container">
-            <nav class="d-flex align-items-center">
-                <a class="taylorUX"><img src='images/tux3.svg' width="150px"></a>
+            <nav class="d-flex align-items-center mb-3">
+                <a class="taylorUX"><img src='images/tux3.svg' width="150px" href=".landingContainer"></a>
                 <div>
                     <ol>
-                        <li><a class="nav-link" href="#">ux</a></li>
-                        <li><a class="nav-link" href="#">design</a></li>
+                        <li><a class="nav-link" href="#">dev/design</a></li>
+                        <li><a class="nav-link" href="#">art</a></li>
                         <li><a class="nav-link " href="#">resume</a></li>
                         <li><a class="nav-link" href="#">about</a></li>
                     </ol>
                 </div>
             </nav>
+        <div class="container">
+                <div class="row justify-content-center">
+                    <div id="devWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5" href="#devSection"><h2 class="landingText">developement<br>+<br> design</h2></div>
+                    <div id="artWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5 d-flex justify-content-center align-items-center" href="#artSection"><h2 class="landingText">art</h2></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div id="resumeWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5" href="resume.pdf"><h2 class="landingText">resume</h2></div>
+                    <div id="aboutWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5" href="#aboutSection"><h2 class="landingText">about me</h2></div>
+                </div>
         </div>
+        <div class="container"></div>
     </header>
         <main>
         <section id="story">
@@ -75,7 +85,7 @@
         <footer>
             <p id="copyright">&copy; 2018 taylor bailey uix</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
