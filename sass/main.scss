@@ -3,6 +3,7 @@ $lightblue: #81d7ff;
 $blue: #3FC1FF;
 $darkblue: #2A7BFF;
 $black: #3b494c;
+$bgblack: #313738;
 $white: #fcfcfc;
 
 
@@ -19,7 +20,7 @@ body {
 
 //Landing Div//
 .landingContainer {
-    height: 800px;
+    padding-bottom: 3em;
     background-color: $white;
 }
 
@@ -109,7 +110,7 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 }
 
 #artWindow{
-    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/WerewizardWM.png");
+    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/WerewizardWM.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
@@ -117,7 +118,7 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 }
 
 #artWindow:hover{
-    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/WerewizardWM.png");
+    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/WerewizardWM.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
@@ -125,7 +126,7 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 }
 
 #devWindow{
-    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/pantry-mockup.png");
+    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/pantry-mockup.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
@@ -133,18 +134,66 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 }
 
 #devWindow:hover{
-    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/pantry-mockup.png");
+    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/pantry-mockup.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
     transition: .5s ease-in;
 }
 
+#resumeWindow{
+    background-image: linear-gradient(45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/twb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+#resumeWindow:hover{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/twb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+#aboutWindow{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/sketch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+#aboutWindow:hover{
+    background-image: linear-gradient(45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/sketch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+.aboutOverflow {
+    overflow: hidden;
+}
+
+.landingWindow:hover .landingText{
+    display: none;
+}
+
 
 .landingText{
     color: $white;
     font-family: "Titillium Web";
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 800;
     letter-spacing: 4px;
+    word-wrap: break-word;
+}
+
+//Dev Section//
+#devSection {
+    height: 500px;
+    background-color: $bgblack;
+    color: $white;
 }

@@ -5,7 +5,7 @@ body {
   color: #3b494c; }
 
 .landingContainer {
-  height: 800px;
+  padding-bottom: 3em;
   background-color: #fcfcfc; }
 
 .container nav {
@@ -68,38 +68,78 @@ li:not(:last-child) {
   background-image: url(); }
 
 #artWindow {
-  background-image: linear-gradient(-45deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/WerewizardWM.png");
+  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/WerewizardWM.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
   transition: .5s ease-in; }
 
 #artWindow:hover {
-  background-image: linear-gradient(-45deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/WerewizardWM.png");
+  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/WerewizardWM.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
   transition: .5s ease-in; }
 
 #devWindow {
-  background-image: linear-gradient(-45deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/pantry-mockup.png");
+  background-image: linear-gradient(135deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/pantry-mockup.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
   transition: .5s ease-in; }
 
 #devWindow:hover {
-  background-image: linear-gradient(-45deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/pantry-mockup.png");
+  background-image: linear-gradient(135deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/pantry-mockup.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
   transition: .5s ease-in; }
 
+#resumeWindow {
+  background-image: linear-gradient(45deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/twb.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: .5s ease-in; }
+
+#resumeWindow:hover {
+  background-image: linear-gradient(-45deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/twb.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: .5s ease-in; }
+
+#aboutWindow {
+  background-image: linear-gradient(-45deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/sketch.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: .5s ease-in; }
+
+#aboutWindow:hover {
+  background-image: linear-gradient(45deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/sketch.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: .5s ease-in; }
+
+.aboutOverflow {
+  overflow: hidden; }
+
+.landingWindow:hover .landingText {
+  display: none; }
+
 .landingText {
   color: #fcfcfc;
   font-family: "Titillium Web";
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 800;
-  letter-spacing: 4px; }
+  letter-spacing: 4px;
+  word-wrap: break-word; }
+
+#devSection {
+  height: 500px;
+  background-color: #313738;
+  color: #fcfcfc; }
 
 /*# sourceMappingURL=main.css.map */
