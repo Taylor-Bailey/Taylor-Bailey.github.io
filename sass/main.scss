@@ -193,7 +193,28 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 
 //Dev Section//
 #devSection {
-    height: 500px;
     background-color: $bgblack;
     color: $white;
+}
+
+.pantryMockup{
+    height: auto;
+    // width: 300px;
+    // max-width: 300px;
+} 
+
+.appName{
+    margin-bottom:10px;
+    letter-spacing: 5px;
+}
+
+.underLine{
+    margin: 2em 0;
+    height: 4px;
+    width:145px;
+    background-color: $blue;
+}
+
+.blueText {
+    color: $blue;
 }

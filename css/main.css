@@ -138,8 +138,23 @@ li:not(:last-child) {
   word-wrap: break-word; }
 
 #devSection {
-  height: 500px;
   background-color: #313738;
   color: #fcfcfc; }
+
+.pantryMockup {
+  height: auto; }
+
+.appName {
+  margin-bottom: 10px;
+  letter-spacing: 5px; }
+
+.underLine {
+  margin: 2em 0;
+  height: 4px;
+  width: 145px;
+  background-color: #3FC1FF; }
+
+.blueText {
+  color: #3FC1FF; }
 
 /*# sourceMappingURL=main.css.map */
