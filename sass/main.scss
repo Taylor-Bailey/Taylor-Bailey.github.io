@@ -1,0 +1,299 @@
+// palette //
+$lightblue: #81d7ff; 
+$blue: #3FC1FF;
+$darkblue: #2A7BFF;
+$subtext: #91a3b1;
+$black: #3b494c;
+$bgblack: #313738;
+$white: #fcfcfc;
+
+
+//font family//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web');
+
+//main styles//
+body {
+    font-family: "Open Sans", "Arial";
+    background-color: $white;
+    color: $black;
+}
+
+h1, h2, h3 {
+    font-family: "Titillium Web";
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+//Landing Div//
+.landingContainer {
+    padding-bottom: 3em;
+    background-color: $white;
+    height: 100vh;
+}
+
+//Navigation//
+.container nav {
+    margin-bottom: 3em !important;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    color: $black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    margin-top: 20px;    
+    padding-left: 0px;
+    padding-bottom: 2px;
+}
+
+nav li a {
+    font-family: "Titillium Web";
+    text-decoration: none;
+    font-weight: 800;
+    color: $black;
+    line-height: .4;
+    // padding: 8px 0px !important;
+}
+
+nav li a:hover {
+    color: $black !important;
+    border-bottom: 4px solid rgb(118, 170, 255);
+    padding-bottom: 0px;
+    transition: ease-in-out .2s;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: $black;
+}
+
+li:not(:last-child) {
+    margin-right: 15px;
+}
+
+@media only screen and (min-width: 1200px){
+nav {
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
+
+@media only screen and (min-width: 1200px){
+    ol{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 398px){
+    ol{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
+    margin-right: 40px;
+}
+}
+
+//Landing Window//
+.landingWindow {
+    height: 200px;
+    // border: 1px solid $blue;
+}
+
+#devWindow{
+    background-image:url();
+}
+
+#artWindow{
+    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/WerewizardWM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+#artWindow:hover{
+    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/WerewizardWM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+#devWindow{
+    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/pantry-landing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+#devWindow:hover{
+    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/pantry-landing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    transition: .5s ease-in;
+}
+
+#resumeWindow{
+    background-image: linear-gradient(45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/twb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+#resumeWindow:hover{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/twb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+#aboutWindow{
+    background-image: linear-gradient(-45deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/sketch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+#aboutWindow:hover{
+    background-image: linear-gradient(45deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/sketch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+.aboutOverflow {
+    overflow: hidden;
+}
+
+.landingWindow:hover .landingText{
+    display: none;
+}
+
+
+.landingText{
+    color: white;
+    font-family: "Titillium Web";
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    word-wrap: break-word;
+}
+
+//Dev Section//
+#devSection {
+    background-color: $bgblack;
+    color: $white;
+    padding: 3.5em 0;
+}
+
+.pantryMockup{
+    height: auto;
+    width: 300px;
+    margin:auto;
+    // max-width: 300px;
+} 
+
+.appName{
+    margin-bottom:10px;
+    letter-spacing: 5px;
+}
+
+.underLine{
+    margin: 1em 0 2em 0;
+    height: 4px;
+    width:145px;
+    background-color: $blue;
+}
+
+.blueText {
+    color: $blue;
+}
+
+.appDescription{
+    margin: auto;
+}
+
+.appDescription ul {
+    padding-left: 0;
+}
+
+.appDescription li {
+    color: $subtext;
+    display: block;
+}
+
+.appDescription p {
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+#liveButton {
+    position: absolute;
+    left: -24px;
+    top: 95px;
+    border: 2px solid $blue;
+}
+
+#codeButton {
+    position: absolute;
+    left: 124px;
+    top: 95px;
+    border: 2px solid $blue;
+}
+
+.projectButton{
+height: 90px;
+width: 90px;
+background-color: transparent;
+transform: rotate(45deg);
+border: none;
+color: $white;
+}
+#codeButton:hover, #liveButton:hover {
+    color: $blue;
+    transition: ease-in-out .4s;
+}
+
+.projectButton h3 {
+    transform: rotate(-45deg);
+    letter-spacing: 3px;
+}
+
+#codeButton h3 {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+#liveButton h3 {
+    position: relative;
+    left: 0px;
+    top: 4px;
+}
