@@ -2,6 +2,7 @@
 $lightblue: #81d7ff; 
 $blue: #3FC1FF;
 $darkblue: #2A7BFF;
+$subtext: #91a3b1;
 $black: #3b494c;
 $bgblack: #313738;
 $white: #fcfcfc;
@@ -17,11 +18,25 @@ body {
     color: $black;
 }
 
+h1, h2, h3 {
+    font-family: "Titillium Web";
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
 
 //Landing Div//
 .landingContainer {
     padding-bottom: 3em;
     background-color: $white;
+    height: 100vh;
 }
 
 //Navigation//
@@ -126,7 +141,7 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 }
 
 #devWindow{
-    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/pantry-mockup.png");
+    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/pantry-landing.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
@@ -134,7 +149,7 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 }
 
 #devWindow:hover{
-    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/pantry-mockup.png");
+    background-image: linear-gradient(135deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/pantry-landing.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
@@ -183,7 +198,7 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 
 
 .landingText{
-    color: $white;
+    color: white;
     font-family: "Titillium Web";
     font-size: 24px;
     font-weight: 800;
@@ -195,11 +210,13 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 #devSection {
     background-color: $bgblack;
     color: $white;
+    padding: 3.5em 0;
 }
 
 .pantryMockup{
     height: auto;
-    // width: 300px;
+    width: 300px;
+    margin:auto;
     // max-width: 300px;
 } 
 
@@ -209,7 +226,7 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 }
 
 .underLine{
-    margin: 2em 0;
+    margin: 1em 0 2em 0;
     height: 4px;
     width:145px;
     background-color: $blue;
@@ -217,4 +234,66 @@ ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
 
 .blueText {
     color: $blue;
+}
+
+.appDescription{
+    margin: auto;
+}
+
+.appDescription ul {
+    padding-left: 0;
+}
+
+.appDescription li {
+    color: $subtext;
+    display: block;
+}
+
+.appDescription p {
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+#liveButton {
+    position: absolute;
+    left: -24px;
+    top: 95px;
+    border: 2px solid $blue;
+}
+
+#codeButton {
+    position: absolute;
+    left: 124px;
+    top: 95px;
+    border: 2px solid $blue;
+}
+
+.projectButton{
+height: 90px;
+width: 90px;
+background-color: transparent;
+transform: rotate(45deg);
+border: none;
+color: $white;
+}
+#codeButton:hover, #liveButton:hover {
+    color: $blue;
+    transition: ease-in-out .4s;
+}
+
+.projectButton h3 {
+    transform: rotate(-45deg);
+    letter-spacing: 3px;
+}
+
+#codeButton h3 {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+#liveButton h3 {
+    position: relative;
+    left: 0px;
+    top: 4px;
 }
