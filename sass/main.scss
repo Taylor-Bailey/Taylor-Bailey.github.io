@@ -312,7 +312,7 @@ li:not(:last-child) {
 }
 
 .carousel-inner {
-    // background-color: white;
+    box-shadow: 0px 2px 40px -10px rgba(0,0,0,.2);
 }
 
 #active-carousel-indicators {
