@@ -17,10 +17,11 @@ h3 {
 
 .landingContainer {
   margin-bottom: 3em;
-  background-color: #fcfcfc; }
+  background-color: #fcfcfc;
+  height: 100vh; }
 
 .container nav {
-  margin-bottom: 3em !important; }
+  margin-bottom: 4em !important; }
 
 nav {
   display: flex;
@@ -29,13 +30,11 @@ nav {
   padding-top: 20px;
   color: #3b494c; }
 
+nav img {
+  width: 100px; }
+
 ul {
   list-style-type: none; }
-
-ol {
-  margin-top: 20px;
-  padding-left: 0px;
-  padding-bottom: 2px; }
 
 nav li a {
   font-family: "Titillium Web";
@@ -227,25 +226,35 @@ li:not(:last-child) {
 
 #artSection {
   background-image: linear-gradient(360deg, #e0e2ee, #fcfcfc);
-  padding: 2rem 5rem 5rem; }
+  padding: 2.5rem 5rem 5rem; }
 
 #active-carousel-indicators {
-  bottom: -4rem !important; }
+  bottom: -4.5rem !important;
+  margin-right: 5%;
+  margin-left: 5%; }
 
 .carousel-indicators li {
-  background-color: #3FC1FF !important;
+  background-image: linear-gradient(-45deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7));
   opacity: .85;
   width: .8rem;
   height: .8rem;
   cursor: pointer;
   transform: rotate(45deg);
   transition: .2s ease-in-out;
-  border-radius: none; }
+  border-radius: none;
+  margin: .7rem !important; }
 
 .carousel-indicators li:hover {
-  background-color: transparent !important;
+  background-image: none !important;
+  background-color: transparent;
   border: 2px solid #3FC1FF;
-  transform: rotate(135deg); }
+  transform: rotate(135deg) scale(1.2); }
+
+.carousel-indicators .active {
+  background-image: none !important;
+  background-color: transparent;
+  border: 2px solid #3FC1FF;
+  transform: rotate(135deg) scale(1.2); }
 
 carousel-indicators li:focus {
   outline: none; }
@@ -265,18 +274,22 @@ carousel-indicators li:focus {
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
   width: 1.4rem;
-  height: 1.4rem; }
+  height: 1.4rem;
+  opacity: .6; }
 
 .carousel-control-prev-icon:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' stroke='#3FC1FF' stroke-width='.75' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  opacity: 1; }
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
   width: 1.4rem;
-  height: 1.4rem; }
+  height: 1.4rem;
+  opacity: .6; }
 
 .carousel-control-next-icon:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' stroke='#3FC1FF' stroke-width='.75' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  opacity: 1; }
 
 .carouselSelector h2 {
   letter-spacing: 3px; }
