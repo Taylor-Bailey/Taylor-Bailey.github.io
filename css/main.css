@@ -225,4 +225,53 @@ li:not(:last-child) {
 .greeting {
   letter-spacing: 4px; }
 
+#active-carousel-indicators {
+  bottom: -4rem !important; }
+
+.carousel-indicators li {
+  background-color: #3FC1FF !important;
+  opacity: .85;
+  width: .8rem;
+  height: .8rem;
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition: .2s ease-in-out;
+  border-radius: none; }
+
+.carousel-indicators li:hover {
+  background-color: transparent !important;
+  border: 2px solid #3FC1FF;
+  transform: rotate(135deg); }
+
+carousel-indicators li:focus {
+  outline: none; }
+
+.carousel-control-next {
+  right: -4rem;
+  opacity: 1;
+  transition: .3ms ease-in-out; }
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  opacity: 1; }
+
+.carousel-control-prev {
+  left: -4rem;
+  opacity: 1; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  width: 1.4rem;
+  height: 1.4rem; }
+
+.carousel-control-prev-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' stroke='#3FC1FF' stroke-width='.75' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  width: 1.4rem;
+  height: 1.4rem; }
+
+.carousel-control-next-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' stroke='#3FC1FF' stroke-width='.75' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+
 /*# sourceMappingURL=main.css.map */
