@@ -80,13 +80,13 @@ li:not(:last-child) {
   height: 14rem; }
 
 #artWindow {
-  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/WerewizardWM.png");
+  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/wizard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%; }
 
 #artWindow:hover {
-  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/WerewizardWM.png");
+  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/wizard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
@@ -96,14 +96,14 @@ li:not(:last-child) {
   background-image: linear-gradient(135deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/pantry-landing.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 50%; }
+  background-position-y: 50%;
+  transition: background-image 0.9s ease-in-out; }
 
 #devWindow:hover {
   background-image: linear-gradient(135deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/pantry-landing.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 50%;
-  transition: .5s ease-in; }
+  background-position-y: 50%; }
 
 #resumeWindow {
   background-image: linear-gradient(45deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/twb.png");
@@ -225,6 +225,10 @@ li:not(:last-child) {
 .greeting {
   letter-spacing: 4px; }
 
+#artSection {
+  background-image: linear-gradient(360deg, #e0e2ee, #fcfcfc);
+  padding: 2rem 5rem 5rem; }
+
 #active-carousel-indicators {
   bottom: -4rem !important; }
 
@@ -273,5 +277,15 @@ carousel-indicators li:focus {
 
 .carousel-control-next-icon:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' stroke='#3FC1FF' stroke-width='.75' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+
+.carouselSelector h2 {
+  letter-spacing: 3px; }
+
+.carouselSelector {
+  padding-right: 30px;
+  padding-left: 0px; }
+
+.carouselSelector li {
+  display: inline; }
 
 /*# sourceMappingURL=main.css.map */
