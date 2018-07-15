@@ -42,7 +42,8 @@ nav li a {
   text-decoration: none;
   font-weight: 800;
   color: #3b494c;
-  line-height: .4; }
+  line-height: .4;
+  letter-spacing: .1rem; }
 
 nav li a:hover {
   color: #3b494c !important;
@@ -78,17 +79,14 @@ li:not(:last-child) {
 .landingWindow {
   height: 14rem; }
 
-#devWindow {
-  background-image: url(); }
-
 #artWindow {
-  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/WerewizardWM.png");
+  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/wizard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%; }
 
 #artWindow:hover {
-  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/WerewizardWM.png");
+  background-image: linear-gradient(-90deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/wizard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 50%;
@@ -98,14 +96,14 @@ li:not(:last-child) {
   background-image: linear-gradient(135deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/pantry-landing.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 50%; }
+  background-position-y: 50%;
+  transition: background-image 0.9s ease-in-out; }
 
 #devWindow:hover {
   background-image: linear-gradient(135deg, rgba(42, 123, 255, 0), rgba(63, 193, 255, 0)), url("../images/pantry-landing.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 50%;
-  transition: .5s ease-in; }
+  background-position-y: 50%; }
 
 #resumeWindow {
   background-image: linear-gradient(45deg, rgba(42, 123, 255, 0.7), rgba(63, 193, 255, 0.7)), url("../images/twb.png");
@@ -148,7 +146,7 @@ li:not(:last-child) {
   word-wrap: break-word; }
 
 #devSection {
-  background-color: #313738;
+  background-image: linear-gradient(0deg, #121213, #252525);
   color: #fcfcfc;
   padding: 3.5em 0; }
 
@@ -192,21 +190,102 @@ li:not(:last-child) {
   background-color: transparent;
   border: 2px solid #fcfcfc;
   width: 100px;
-  margin: 0 1em; }
+  margin: 0 1em;
+  color: #fcfcfc;
+  text-decoration: none;
+  letter-spacing: 2px; }
 
 .projectButton:hover {
   color: #3FC1FF;
   border: 2px solid #3FC1FF;
   transition: ease-in-out .4s; }
 
-.projectButton a {
-  text-decoration: none;
-  color: #fcfcfc;
-  letter-spacing: 2px;
-  display: block; }
+#aboutSection {
+  background-color: #fcfcfc;
+  padding: 3.5rem 0; }
 
-.projectButton + a:hover {
-  color: #3FC1FF;
-  transition: ease-in-out .4s; }
+.square {
+  width: 300px;
+  height: 350px;
+  overflow: hidden; }
+
+.pic {
+  background: url("../images/me.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px -50px;
+  height: 450px; }
+
+.underLine2 {
+  margin: 1em 0 2em 0;
+  height: 4px;
+  width: 120px;
+  background-color: #3FC1FF; }
+
+.greeting {
+  letter-spacing: 4px; }
+
+#artSection {
+  background-image: linear-gradient(360deg, #e0e2ee, #fcfcfc);
+  padding: 2rem 5rem 5rem; }
+
+#active-carousel-indicators {
+  bottom: -4rem !important; }
+
+.carousel-indicators li {
+  background-color: #3FC1FF !important;
+  opacity: .85;
+  width: .8rem;
+  height: .8rem;
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition: .2s ease-in-out;
+  border-radius: none; }
+
+.carousel-indicators li:hover {
+  background-color: transparent !important;
+  border: 2px solid #3FC1FF;
+  transform: rotate(135deg); }
+
+carousel-indicators li:focus {
+  outline: none; }
+
+.carousel-control-next {
+  right: -4rem;
+  opacity: 1;
+  transition: .3ms ease-in-out; }
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  opacity: 1; }
+
+.carousel-control-prev {
+  left: -4rem;
+  opacity: 1; }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  width: 1.4rem;
+  height: 1.4rem; }
+
+.carousel-control-prev-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' stroke='#3FC1FF' stroke-width='.75' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  width: 1.4rem;
+  height: 1.4rem; }
+
+.carousel-control-next-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='transparent' stroke='#3FC1FF' stroke-width='.75' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+
+.carouselSelector h2 {
+  letter-spacing: 3px; }
+
+.carouselSelector {
+  padding-right: 30px;
+  padding-left: 0px; }
+
+.carouselSelector li {
+  display: inline; }
 
 /*# sourceMappingURL=main.css.map */
