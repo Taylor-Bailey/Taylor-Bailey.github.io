@@ -206,16 +206,15 @@ li:not(:last-child) {
 //Dev Section//
 
 #devSection {
-    background-image: linear-gradient(0deg,($bgblack),(#252525));
+    background-image: linear-gradient(360deg,($bgblack),(#252525));
     color: $white;
     padding: 3.5em 0;
 }
 
-.pantryMockup{
-    height: auto;
-    width: 200px;
-    margin:auto;
-} 
+.pantrySection, .bearArmsSection {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
 
 .appName{
     margin-bottom:10px;
@@ -233,10 +232,6 @@ li:not(:last-child) {
     color: $blue;
 }
 
-.appDescription{
-    margin: auto;
-}
-
 .appDescription ul {
     padding-left: 0;
 }
@@ -251,8 +246,9 @@ li:not(:last-child) {
     margin-bottom: 2em;
 }
 
-#pantryIcon{
-    width: 50%;
+.devIcon{
+    height: 200px;
+    width: auto;
     margin-bottom: 3em;
 }
 
