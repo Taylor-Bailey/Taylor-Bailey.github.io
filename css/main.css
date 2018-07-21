@@ -145,14 +145,13 @@ li:not(:last-child) {
   word-wrap: break-word; }
 
 #devSection {
-  background-image: linear-gradient(0deg, #121213, #252525);
+  background-image: linear-gradient(360deg, #121213, #252525);
   color: #fcfcfc;
   padding: 3.5em 0; }
 
-.pantryMockup {
-  height: auto;
-  width: 200px;
-  margin: auto; }
+.pantrySection, .bearArmsSection {
+  margin-bottom: 5rem;
+  margin-top: 5rem; }
 
 .appName {
   margin-bottom: 10px;
@@ -167,9 +166,6 @@ li:not(:last-child) {
 .blueText {
   color: #3FC1FF; }
 
-.appDescription {
-  margin: auto; }
-
 .appDescription ul {
   padding-left: 0; }
 
@@ -181,8 +177,9 @@ li:not(:last-child) {
   font-size: 20px;
   margin-bottom: 2em; }
 
-#pantryIcon {
-  width: 50%;
+.devIcon {
+  height: 200px;
+  width: auto;
   margin-bottom: 3em; }
 
 .projectButton {
