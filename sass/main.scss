@@ -211,6 +211,12 @@ li:not(:last-child) {
     padding: 3.5em 0;
 }
 
+
+.devHeading {
+    letter-spacing: .35rem;
+    font-weight: 500;
+}
+
 .pantrySection, .bearArmsSection {
     margin-bottom: 5rem;
     margin-top: 5rem;
@@ -224,7 +230,14 @@ li:not(:last-child) {
 .underLine{
     margin: 1em 0 2em 0;
     height: 4px;
-    width:145px;
+    width: 113px;
+    background-color: $blue;
+}
+
+.underLine2{
+    margin: 1em 0 2em 0;
+    height: 4px;
+    width: 206px;
     background-color: $blue;
 }
 
@@ -261,6 +274,7 @@ li:not(:last-child) {
     color: #fcfcfc;
     text-decoration: none;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .projectButton:hover{
@@ -290,7 +304,7 @@ li:not(:last-child) {
     height: 450px;
   }
 
-.underLine2{
+.underLine3{
     margin: 1em 0 2em 0;
     height: 4px;
     width: 120px;
