@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "firebase": "^3.6.9"
+    "firebase": "^3.6.9",
+    "hover.css": "^2.3.2"
   }
 }
