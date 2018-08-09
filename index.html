@@ -54,44 +54,50 @@
             <h1 class="devHeading">solo projects</h2>
         </div>
         <!-- Pantry Section -->
-        <div class="container pantrySection">
-            <div class="flex-row d-flex justify-content-between align-items-center">
-                <img class="col-5" src="./images/pantry-mockup2.png">
-                <div class="d-flex align-items-center flex-column col-3">
-                    <img src="./images/pantry-logo.png" class="devIcon">
-                    <div class="buttonRow row">
-                        <a href="https://github.com/Taylor-Bailey/Pantry-Capstone-1" target="_blank">
-                            <button id="codeButton" class="projectButton col align-self-center" >code</button>
+        <div class="container-fluid pantrySection">
+            <div class="row justify-content-md-around justify-content-center align-items-center">
+                <!-- Mockup Image -->
+                <img class="col-lg-4 col-md-7 col-10 order-lg-1 order-md-1 order-2 devIcon" src="./images/pantry-mockup2.png">
+                <!-- Logo & Buttons -->
+                <div class="d-flex align-items-center flex-column col-lg-3 col-md-7 col-10 order-lg-2 order-md-3 order-3 mb-5">
+                    <img src="./images/logo/pantry-logo.svg" class="devIcon">
+                    <div class="row">
+                        <a href="https://github.com/Taylor-Bailey/Pantry-Capstone-1" target="_blank" class="col-6">
+                            <button id="liveButton" class="projectButton "><p class="textRotator">code</p></button>
                         </a>
-                        <a href="https://taylor-bailey.github.io/Pantry-Capstone-1/" target="_blank">
-                            <button id="liveButton" class="projectButton col align-self-center">live</button>
+                        <a href="https://taylor-bailey.github.io/Pantry-Capstone-1/" target="_blank" class="col-6" style="
+                        transform: translateX(2rem)">
+                            <button  id="liveButton" class="projectButton "><p class="textRotator">live</p></button>
                         </a>
                     </div>
                 </div>
-                <div class="appDescription col-3 align-items-left">
-                    <h2 class="appName">pantry</h2>
-                    <div class="underLine"></div>
+                <!-- App Description -->
+                <div class="appDescription col-lg-2 col-md-5 col-10 align-items-left order-lg-3 order-md-2 order-1">
+                    <div class="appNameDiv">
+                        <h2 class="appName">pantry</h2>
+                        <div class="underLine"></div>
+                    </div>
                     <p><span class="blueText">//</span>&nbsp; Find delicious meals with food you have on hand.</p>
-                    <h2>work</h2>
-                    <ul>
-                        <li><span class="blueText">//</span>&nbsp;Front End Development</li>
-                        <li><span class="blueText">//</span>&nbsp;User Experience Design</li>
-                        <li><span class="blueText">//</span>&nbsp;User Interface Design</li>
-                        <li><span class="blueText">//</span>&nbsp;Graphic Design</li>
-                        <li><span class="blueText">//</span>&nbsp;Deployment</li>
+                    <h3 class="mb-3">work</h3>
+                    <ul class="workList">
+                        <li><span class="blueText">//</span>&nbsp; Front End Development</li>
+                        <li><span class="blueText">//</span>&nbsp; User Experience Design</li>
+                        <li><span class="blueText">//</span>&nbsp; User Interface Design</li>
+                        <li><span class="blueText">//</span>&nbsp; Graphic Design</li>
+                        <li><span class="blueText">//</span>&nbsp; Deployment</li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- Bear Arms Section -->
-        <div class="container bearArmsSection">
-            <div class="flex-row d-flex justify-content-between align-items-center">
-                <div class="appDescription col-3 align-items-left">
-                    <h1 class="appName">bear arms</h1>
-                    <div class="underLine2"></div>
+        <div class="container-fluid bearArmsSection">
+            <div class="row justify-content-md-around justify-content-center align-items-center">
+                <!-- App Description -->
+                <div class="appDescription col-lg-2 col-md-5 col-10 align-items-left order-lg-1 order-md-1 order-1">
+                    <h2 class="appName">bear arms</h2>
                     <p><span class="blueText">//</span>&nbsp; Stay current on which states honor your concealed weapons permit.</p>
-                    <h2>work</h2>
-                    <ul>
+                    <h3 class="mb-3">work</h3>
+                    <ul class="workList">
                         <li><span class="blueText">//</span>&nbsp; Front End Development</li>
                         <li><span class="blueText">//</span>&nbsp; JSON Test Server</li>
                         <li><span class="blueText">//</span>&nbsp; User Experience Design</li>
@@ -100,12 +106,13 @@
                         <li><span class="blueText">//</span>&nbsp; Deployment</li>
                     </ul>
                 </div>
-                <div class="d-flex align-items-center flex-column col-4">
-                    <img src="./images/beararms-logo.png" class="devIcon">
+                <!-- Logo & Buttons -->
+                <div class="d-flex align-items-center flex-column col-lg-3 col-md-8 col-10 order-lg-2 order-md-3 order-3 mb-5">
+                    <img src="./images/logo/beararms-logo.png" class="devIcon">
                     <div class="buttonRow row">
                         <a href="https://github.com/Taylor-Bailey/Pantry-Capstone-1" target="_blank">
-                            <button id="codeButton" class="projectButton col align-self-center" >
-                                code
+                            <button id="codeButton" class="projectButton col align-self-center" style="margin: 1rem">
+                                <p class="textRotator">code</p>
                             </button>
                         </a>
                         <!-- <a href="https://taylor-bailey.github.io/Pantry-Capstone-1/" target="_blank">
@@ -115,32 +122,59 @@
                         </a> -->
                     </div>
                 </div>
-                <img class="col-5" src="./images/beararms.png">
+                <!-- Mockup Image -->
+                <img class="col-lg-4 col-md-7 col-10 order-lg-3 order-md-2 order-2 devIcon" src="./images/beararms-mockup.png">
             </div>            
         </div>
 
         <div class="flex-row d-flex justify-content-center mt-5">
             <h1 class="devHeading">group projects</h2>
         </div>
+        <div class="container-fluid groupProjectsSection">
+                <div class="row justify-content-md-around justify-content-center">
+                    <div class="col-md-4 col-lg-3 col-9">
+                        <img src="./images/logo/wyfy-logo.svg">
+                        <div class="mt-5 text-center groupProject">
+                            <h3 class="groupProjectTitle text-center">nashville open data</h3>
+                            <p class="text-center">wyfy</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-9">
+                        <img src="./images/logo/unicorn.svg">
+                        <div class="mt-5 text-center groupProject">
+                            <h3 class="groupProjectTitle text-center">nashville software school</h3>
+                            <p class="text-center">cohort 24 class site</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-9">
+                        <img src="./images/logo/siloam.svg">
+                        <div class="mt-5 text-center groupProject">
+                            <h3 class="groupProjectTitle">hack for the community</h3>
+                            <p class="text-center">siloam health</p>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
     </div>
 
         <!-- Art Section -->
         <div id="artSection">
-            <div class="row">
-                <div class="d-flex align-items-center justify-content-center carouselSelector flex-column  col-sm-7 col-xs-12">
-                    <ol>
+            <div class="row justify-content-around justify-content-sm-center">
+                <div class="d-flex align-items-center carouselSelector col-12 col-md-4">
+                    <ul>
                         <li>
-                            <h2><span class="blueText">//</span> icons</h2> 
+                            <h2 id="iconSelector" class=""><span class="blueText">//</span> icons</h2> 
                         </li>
                         <li>
-                            <h2><span class="blueText">//</span> logos</h2> 
+                            <h2 id="logoSelector" class=""><span class="blueText">//</span> logos</h2> 
                         </li> 
                         <li>
-                            <h2><span class="blueText">//</span> art</h2> 
+                            <h2 id="artSelector" class="activeSelector"><span class="blueText">//</span> art</h2> 
                         </li> 
-                    </ol>
+                    </ul>
                 </div>
-                <div class="col-sm-5 col-xs-12">
+                <div class="carouselContainer col-sm-10 col-md-8 col-lg-7 col-xl-5 col-12">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol id="active-carousel-indicators" class="carousel-indicators carouselBar">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -157,41 +191,42 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="./images/wizard.png" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/rodeo.png" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/unstoppable.png" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/eagle.png" alt="Fourth slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/octo.png" alt="Fifth slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/kneepads.png" alt="Sixth slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/fett.png" alt="Seventh slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/right.png" alt="Eighth slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/tmg.png" alt="Ninth slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/damo.png" alt="Tenth slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/camu.png" alt="Eleventh slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/vegeta.png" alt="Twelfth slide">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./images/art/wizard.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/rodeo.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/unstoppable.png" alt="Third slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/eagle.png" alt="Fourth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/octo.png" alt="Fifth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/kneepads.png" alt="Sixth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/fett.png" alt="Seventh slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/right.png" alt="Eighth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/tmg.png" alt="Ninth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/damo.png" alt="Tenth slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/camu.png" alt="Eleventh slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./images/art/vegeta.png" alt="Twelfth slide">
+                                </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -227,9 +262,8 @@
         <footer>
             <p id="copyright">&copy; 2018 taylor bailey uix</p>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./dist/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 

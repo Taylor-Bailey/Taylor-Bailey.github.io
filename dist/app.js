@@ -1,9 +1,192 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 'use strict';
-let $ = require("jquery");
+let $ = require("../lib/node_modules/jquery");
 
+let printer = require('./print');
 
-},{"jquery":2}],2:[function(require,module,exports){
+console.log("hello javascrip");
+
+$(document).on("click" , "#iconSelector", function(){
+    event.preventDefault();
+    console.log("hearing the click");
+    $("#iconSelector").addClass("activeSelector");
+    $("#artSelector").removeClass("activeSelector");
+    $("#logoSelector").removeClass("activeSelector");
+    printer.printIcons();
+  });
+
+  $(document).on("click" , "#logoSelector", function(){
+    event.preventDefault();
+    console.log("hearing the click");
+    $("#logoSelector").addClass("activeSelector");
+    $("#artSelector").removeClass("activeSelector");
+    $("#iconSelector").removeClass("activeSelector");
+    printer.printLogos();
+  });
+
+  $(document).on("click" , "#artSelector", function(){
+    event.preventDefault();
+    console.log("hearing the click");
+    $("#artSelector").addClass("activeSelector");
+    $("#logoSelector").removeClass("activeSelector");
+    $("#iconSelector").removeClass("activeSelector");
+    printer.printArt();
+  });
+},{"../lib/node_modules/jquery":3,"./print":2}],2:[function(require,module,exports){
+'use strict';
+
+let $ = require('jquery');
+
+console.log("hello print.js");
+
+let printLogos = () => {
+    $(".carouselContainer").html(
+        `<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol id="active-carousel-indicators" class="carousel-indicators carouselBar">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 " src="./images/logo/beararms-logo.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/logo/pantry-logo.svg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/logo/unicorn.svg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/logo/wyfy-logo.svg" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/logo/flamepoint.png" alt="Fifth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/logo/music-city-pet-sitting.png" alt="Sixth slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>`
+    );
+};
+
+let printIcons = () => {
+    $(".carouselContainer").html(
+        `<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol id="active-carousel-indicators" class="carousel-indicators carouselBar">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/icons/missile-alert-icons.svg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/icons/wyfy-icons.svg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/icons/pantry-icons.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/icons/beararms-icons.svg" alt="Fourth slide">
+                </div>           
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>`
+    );
+};
+
+let printArt = () => {
+    $(".carouselContainer").html(
+        `<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol id="active-carousel-indicators" class="carousel-indicators carouselBar">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/art/wizard.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/rodeo.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/unstoppable.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/eagle.png" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/octo.png" alt="Fifth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/kneepads.png" alt="Sixth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/fett.png" alt="Seventh slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/right.png" alt="Eighth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/tmg.png" alt="Ninth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/damo.png" alt="Tenth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/camu.png" alt="Eleventh slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/art/vegeta.png" alt="Twelfth slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>`
+    );
+};
+
+module.exports = { printArt, printIcons, printLogos };
+},{"jquery":3}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
