@@ -23,13 +23,21 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 40px;
-    font-weight: 800;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: .35rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: .35rem;
 }
 
 h3 {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
 }
 
 //Landing Div//
@@ -92,33 +100,6 @@ li:not(:last-child) {
     margin-right: 15px;
 }
 
-@media only screen and (min-width: 1200px){
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
-        margin-right: 40px;
-    }
-    ol{
-        padding-left: 0;
-    }
-}
-
-@media (max-width: 575.98px) { 
-    .landingWindow {
-        height: 7rem !important;
-    }
-}
-
-@media screen and (max-width: 415px){
-    ol{
-        display: none;
-    }
-    
-}
-
-
 //Landing Window//
 
 .landingWindow {
@@ -126,14 +107,14 @@ li:not(:last-child) {
 }
 
 #artWindow{
-    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/wizard.png");
+    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.7),rgba(63, 193, 255,0.7)),url("../images/art/wizard.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
 }
 
 #artWindow:hover{
-    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/wizard.png");
+    background-image: linear-gradient(-90deg,rgba(42, 123, 255,0.0),rgba(63, 193, 255,0.0)),url("../images/art/wizard.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 50%;
@@ -211,42 +192,32 @@ li:not(:last-child) {
     padding: 3.5em 0;
 }
 
-
-.devHeading {
-    letter-spacing: .35rem;
-    font-weight: 500;
-}
-
-.pantrySection, .bearArmsSection {
+.pantrySection, .bearArmsSection, .groupProjectsSection {
     margin-bottom: 5rem;
     margin-top: 5rem;
 }
 
+
 .appName{
-    margin-bottom:10px;
     letter-spacing: 5px;
+    display: inline-block;
+    padding-bottom: .5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid $blue;
 }
-
-.underLine{
-    margin: 1em 0 2em 0;
-    height: 4px;
-    width: 113px;
-    background-color: $blue;
+.groupProject p {
+    margin-bottom: 5rem;
 }
-
-.underLine2{
-    margin: 1em 0 2em 0;
-    height: 4px;
-    width: 206px;
-    background-color: $blue;
+.groupProjectTitle{
+    letter-spacing: 2px;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid $blue;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .blueText {
     color: $blue;
-}
-
-.appDescription ul {
-    padding-left: 0;
 }
 
 .appDescription li {
@@ -260,29 +231,57 @@ li:not(:last-child) {
 }
 
 .devIcon{
-    height: 200px;
-    width: auto;
-    margin-bottom: 3em;
+    width: 100%;
+    margin-top: 3em;
 }
-
 
 .projectButton{
     background-color: transparent;
     border: 2px solid $white;
-    width: 100px;
-    margin: 0 1em;
-    color: #fcfcfc;
+    margin: -1rem 1rem 1rem -1rem;
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+    transform: rotate(45deg);
+    color: $white;
     text-decoration: none;
+    font-family: "Titillium Web";
     letter-spacing: 2px;
+    font-weight: 800;
     cursor: pointer;
 }
 
 .projectButton:hover{
-    color: $blue;
-    border: 2px solid $blue;
-    transition: ease-in-out .4s;
+    color: $white;
+    border: none;
+    background-image: linear-gradient(-45deg,rgb(42, 123, 255),rgb(63, 193, 255));
+    transition: ease-in .2s;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+    transform: rotate(45deg) translateY(-4px) translateX(-4px);
 }
 
+.projectButton:active {
+    transform: rotate(45deg) translateY(4px) translateX(4px);
+    box-shadow: none;
+    transition: ease-in-out .1s;
+} 
+
+.textRotator {
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+}
+
+.workList{
+    padding-left: 0;
+}
+
+.workList li {
+    margin-bottom: .5rem;
+}
+
+.groupProjects {
+    border: 2px solid $white;
+}
 // About Section //
 
 #aboutSection {
@@ -303,13 +302,6 @@ li:not(:last-child) {
     background-position: 0px -50px;
     height: 450px;
   }
-
-.underLine3{
-    margin: 1em 0 2em 0;
-    height: 4px;
-    width: 120px;
-    background-color: $blue;
-}
 
 .greeting {
     letter-spacing: 4px;
@@ -379,7 +371,7 @@ carousel-indicators li:focus{
 }
 
 .carousel-control-next {
-    right: -4rem;
+    // right: -4rem;
     opacity: 1;
     transition: .3ms ease-in-out;
 }
@@ -389,14 +381,14 @@ carousel-indicators li:focus{
 }
 
 .carousel-control-prev {
-    left: -4rem;
+    // left: -4rem;
     opacity: 1;
 }
 
 .carousel-control-prev-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 2rem;
+    height: 2rem;
     opacity: .6;
 }
 
@@ -407,8 +399,8 @@ carousel-indicators li:focus{
 
 .carousel-control-next-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#3FC1FF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 2rem;
+    height: 2rem;
     opacity: .6;
 }
 
@@ -429,3 +421,96 @@ carousel-indicators li:focus{
 .carouselSelector li{
     display: inline;
 }
+
+.activeSelector {
+    color: $blue;
+    text-shadow: 2px 10px 24px 6px rgba(0, 0, 0, 0.5);
+}
+
+// Media Queries
+
+@media (min-width: 1400px){
+    .container {
+        max-width: 1350px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
+        margin-right: 40px;
+    }
+    ol{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .carouselSelector {
+        padding: 0 !important;
+    }
+    .carouselSelector ul {
+        margin: auto;
+        padding-left: 0
+    }
+    .carouselSelector ul li {
+        display: inline-block;
+    }
+    #artSection {
+        padding: 3rem 2rem !important;
+    }
+    #active-carousel-indicators {
+        bottom: -3.5rem !important;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .landingWindow {
+        height: 8rem !important;
+    }
+    ol{
+        display: none;
+    }
+    .container nav{
+        margin-bottom: 2rem !important;
+    }
+}
+
+@media (max-width: 475px) {
+    h1 {
+        font-size: 3rem;
+        padding: 0 .5rem;
+    }
+    .carouselSelector h2{
+        font-size: 1.8rem !important;
+    }
+    .carousel-indicators li {
+        margin: .4rem  !important;
+    }
+}
+@media (max-width: 405px) {
+    .carousel-indicators li {
+        margin: .2rem  !important;
+    }
+}
+@media (max-width: 321px) {
+    .landingWindow {
+        height: 6rem !important;
+    }
+    .landingText {
+        font-size: 18px !important;
+    }
+    .carouselSelector h2{
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (min-width: 240px) {
+    h1 {
+        text-align:center;
+    }
+}
+
