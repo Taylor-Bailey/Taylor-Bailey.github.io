@@ -32,7 +32,7 @@ let printLogos = () => {
                     <img class="d-block w-100" src="./images/logo/flamepoint.png" alt="Fifth slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/logo/music-city-pet-sitting.png" alt="Sixth slide">
+                    <img class="d-block w-100" src="./images/logo/music-city-pet-sitting.svg" alt="Sixth slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -55,7 +55,6 @@ let printIcons = () => {
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -98,7 +97,6 @@ let printArt = () => {
                 <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -123,19 +121,16 @@ let printArt = () => {
                     <img class="d-block w-100" src="./images/art/fett.png" alt="Seventh slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/art/right.png" alt="Eighth slide">
+                    <img class="d-block w-100" src="./images/art/atlasskye.png" alt="Eighth slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/art/tmg.png" alt="Ninth slide">
+                    <img class="d-block w-100" src="./images/art/modern-witch.png" alt="Ninth slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/art/damo.png" alt="Tenth slide">
+                    <img class="d-block w-100" src="./images/art/vegeta.png" alt="Tenth slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/art/camu.png" alt="Eleventh slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/art/vegeta.png" alt="Twelfth slide">
+                    <img class="d-block w-100" src="./images/art/spookuff.png" alt="Eleventh slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
