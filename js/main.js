@@ -5,6 +5,8 @@ let printer = require('./print');
 
 console.log("hello javascrip");
 
+printer.printArt();
+
 $(document).on("click" , "#iconSelector", function(){
     event.preventDefault();
     console.log("hearing the click");
