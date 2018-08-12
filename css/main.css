@@ -144,6 +144,9 @@ li:not(:last-child) {
   margin-bottom: 5rem;
   margin-top: 5rem; }
 
+.groupProjectsSection a {
+  color: #fcfcfc; }
+
 .appName {
   letter-spacing: 5px;
   display: inline-block;
@@ -157,7 +160,6 @@ li:not(:last-child) {
 .groupProjectTitle {
   letter-spacing: 2px;
   padding-bottom: .5rem;
-  border-bottom: 2px solid #3FC1FF;
   display: inline-block;
   margin-bottom: 1rem; }
 
@@ -212,10 +214,37 @@ li:not(:last-child) {
   padding-left: 0; }
 
 .workList li {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  display: block;
+  color: #91a3b1; }
 
 .groupProjects {
   border: 2px solid #fcfcfc; }
+
+.groupProjectsSection a:hover {
+  text-decoration: none; }
+
+/* stroke */
+a .groupProject h3 {
+  position: relative; }
+
+a .groupProject h3, a .groupProject h3:after, a .groupProject h3:before {
+  transition: all .5s; }
+
+a .groupProject h3:after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: transparent;
+  background: #3FC1FF;
+  height: 2px; }
+
+a:hover .groupProject h3:after {
+  width: 100%; }
 
 #aboutSection {
   background-color: #fcfcfc;

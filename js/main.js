@@ -14,6 +14,7 @@ $(document).on("click" , "#iconSelector", function(){
     $("#artSelector").removeClass("activeSelector");
     $("#logoSelector").removeClass("activeSelector");
     printer.printIcons();
+    $('.carousel').carousel('cycle');
   });
 
   $(document).on("click" , "#logoSelector", function(){
@@ -23,6 +24,7 @@ $(document).on("click" , "#iconSelector", function(){
     $("#artSelector").removeClass("activeSelector");
     $("#iconSelector").removeClass("activeSelector");
     printer.printLogos();
+    $('.carousel').carousel('cycle');
   });
 
   $(document).on("click" , "#artSelector", function(){
@@ -32,4 +34,5 @@ $(document).on("click" , "#iconSelector", function(){
     $("#logoSelector").removeClass("activeSelector");
     $("#iconSelector").removeClass("activeSelector");
     printer.printArt();
+    $('.carousel').carousel('cycle');
   });

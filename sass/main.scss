@@ -197,6 +197,10 @@ li:not(:last-child) {
     margin-top: 5rem;
 }
 
+.groupProjectsSection a {
+    color: $white;
+}
+
 
 .appName{
     letter-spacing: 5px;
@@ -211,7 +215,7 @@ li:not(:last-child) {
 .groupProjectTitle{
     letter-spacing: 2px;
     padding-bottom: .5rem;
-    border-bottom: 2px solid $blue;
+    // border-bottom: 2px solid $blue;
     display: inline-block;
     margin-bottom: 1rem;
 }
@@ -277,11 +281,46 @@ li:not(:last-child) {
 
 .workList li {
     margin-bottom: .5rem;
+    display: block;
+    color: #91a3b1;
+    
 }
 
 .groupProjects {
     border: 2px solid $white;
 }
+
+.groupProjectsSection a:hover{
+    text-decoration: none;
+}
+
+
+      /* stroke */
+ a .groupProject h3 {
+        position: relative;
+}
+
+a .groupProject h3, a .groupProject h3:after, a .groupProject h3:before {
+    transition: all .5s;
+}
+
+ a .groupProject h3:after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '';
+        color: transparent;
+        background: $blue;
+        height: 2px;
+      }
+
+a:hover .groupProject h3:after {
+width: 100%;
+}
+
 // About Section //
 
 #aboutSection {
