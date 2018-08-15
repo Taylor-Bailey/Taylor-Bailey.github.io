@@ -30,6 +30,15 @@ h3 {
 .container nav {
   margin-bottom: 4em !important; }
 
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#2A7BFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
+
+.custom-toggler.navbar-toggler {
+  border: none !important; }
+
+.custom-toggler:focus {
+  outline: none; }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -152,7 +161,7 @@ li:not(:last-child) {
   display: inline-block;
   padding-bottom: .5rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #3FC1FF; }
+  border-bottom: 2px solid #3fc1ff; }
 
 .groupProject p {
   margin-bottom: 5rem; }
@@ -164,7 +173,7 @@ li:not(:last-child) {
   margin-bottom: 1rem; }
 
 .blueText {
-  color: #3FC1FF; }
+  color: #3fc1ff; }
 
 .appDescription li {
   color: #91a3b1;
@@ -240,7 +249,7 @@ a .groupProject h3:after {
   width: 0%;
   content: '';
   color: transparent;
-  background: #3FC1FF;
+  background: #3fc1ff;
   height: 2px; }
 
 a:hover .groupProject h3:after {
@@ -304,13 +313,13 @@ a:hover .groupProject h3:after {
 .carousel-indicators li:hover {
   background-image: none !important;
   background-color: transparent;
-  border: 2px solid #3FC1FF;
+  border: 2px solid #3fc1ff;
   transform: rotate(135deg) scale(1.2); }
 
 .carousel-indicators .active {
   background-image: none !important;
   background-color: transparent;
-  border: 2px solid #3FC1FF;
+  border: 2px solid #3fc1ff;
   transform: rotate(135deg) scale(1.2); }
 
 carousel-indicators li:focus {
@@ -360,22 +369,12 @@ carousel-indicators li:focus {
   cursor: pointer; }
 
 .activeSelector {
-  color: #3FC1FF;
+  color: #3fc1ff;
   text-shadow: 2px 10px 24px 6px rgba(0, 0, 0, 0.5); }
 
 @media (min-width: 1400px) {
   .container {
     max-width: 1350px; } }
-@media only screen and (min-width: 1200px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-between; }
-
-  ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
-    margin-right: 40px; }
-
-  ol {
-    padding-left: 0; } }
 @media (max-width: 768px) {
   .carouselSelector {
     padding: 0 !important; }
@@ -394,13 +393,7 @@ carousel-indicators li:focus {
     bottom: -3.5rem !important; } }
 @media (max-width: 575.98px) {
   .landingWindow {
-    height: 8rem !important; }
-
-  ol {
-    display: none; }
-
-  .container nav {
-    margin-bottom: 2rem !important; } }
+    height: 8rem !important; } }
 @media (max-width: 475px) {
   h1 {
     font-size: 3rem;
