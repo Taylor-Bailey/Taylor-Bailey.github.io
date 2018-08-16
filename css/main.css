@@ -27,44 +27,69 @@ h3 {
   background-color: #fcfcfc;
   height: 100vh; }
 
-.container nav {
-  margin-bottom: 4em !important; }
+.tux {
+  display: block;
+  margin: 2rem auto; }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  color: #3b494c; }
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#2A7BFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
 
-nav img {
-  width: 100px; }
+.custom-toggler.navbar-toggler {
+  border: none !important; }
+
+.custom-toggler:focus {
+  outline: none; }
 
 ul {
   list-style-type: none; }
+
+.navlist {
+  padding: 1rem;
+  background-image: linear-gradient(0deg, rgba(42, 123, 255, 0.9), rgba(63, 193, 255, 0.9)); }
+
+nav.fill ul li a {
+  position: relative; }
+
+nav.fill ul li a, nav.fill ul li a:after, nav.fill ul li a:before {
+  transition: all .5s; }
+
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: transparent;
+  background: #fcfcfc;
+  height: 1px; }
+
+nav.fill ul li a:hover:after {
+  width: 100%; }
+
+nav a:hover {
+  color: #fcfcfc; }
 
 nav li a {
   font-family: "Titillium Web";
   text-decoration: none;
   font-weight: 800;
-  color: #3b494c;
+  color: #fcfcfc;
   line-height: .4;
-  letter-spacing: .1rem; }
-
-nav li a:hover {
-  color: #3b494c !important;
-  border-bottom: 4px solid #76aaff;
-  padding-bottom: 0px;
-  transition: ease-in-out .2s; }
+  letter-spacing: .1rem;
+  padding: 2rem; }
 
 li {
   font-size: 16px;
-  margin-bottom: 1rem;
   display: inline-block;
   color: #3b494c; }
 
 li:not(:last-child) {
   margin-right: 15px; }
+
+.landingWindows {
+  margin-top: 7rem; }
 
 .landingWindow {
   height: 14rem; }
@@ -152,7 +177,7 @@ li:not(:last-child) {
   display: inline-block;
   padding-bottom: .5rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #3FC1FF; }
+  border-bottom: 2px solid #3fc1ff; }
 
 .groupProject p {
   margin-bottom: 5rem; }
@@ -164,7 +189,7 @@ li:not(:last-child) {
   margin-bottom: 1rem; }
 
 .blueText {
-  color: #3FC1FF; }
+  color: #3fc1ff; }
 
 .appDescription li {
   color: #91a3b1;
@@ -240,7 +265,7 @@ a .groupProject h3:after {
   width: 0%;
   content: '';
   color: transparent;
-  background: #3FC1FF;
+  background: #3fc1ff;
   height: 2px; }
 
 a:hover .groupProject h3:after {
@@ -304,13 +329,13 @@ a:hover .groupProject h3:after {
 .carousel-indicators li:hover {
   background-image: none !important;
   background-color: transparent;
-  border: 2px solid #3FC1FF;
+  border: 2px solid #3fc1ff;
   transform: rotate(135deg) scale(1.2); }
 
 .carousel-indicators .active {
   background-image: none !important;
   background-color: transparent;
-  border: 2px solid #3FC1FF;
+  border: 2px solid #3fc1ff;
   transform: rotate(135deg) scale(1.2); }
 
 carousel-indicators li:focus {
@@ -360,22 +385,12 @@ carousel-indicators li:focus {
   cursor: pointer; }
 
 .activeSelector {
-  color: #3FC1FF;
+  color: #3fc1ff;
   text-shadow: 2px 10px 24px 6px rgba(0, 0, 0, 0.5); }
 
 @media (min-width: 1400px) {
   .container {
     max-width: 1350px; } }
-@media only screen and (min-width: 1200px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-between; }
-
-  ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
-    margin-right: 40px; }
-
-  ol {
-    padding-left: 0; } }
 @media (max-width: 768px) {
   .carouselSelector {
     padding: 0 !important; }
@@ -391,16 +406,13 @@ carousel-indicators li:focus {
     padding: 3rem 2rem !important; }
 
   #active-carousel-indicators {
-    bottom: -3.5rem !important; } }
-@media (max-width: 575.98px) {
+    bottom: -3.5rem !important; }
+
   .landingWindow {
-    height: 8rem !important; }
+    height: 10rem !important; }
 
-  ol {
-    display: none; }
-
-  .container nav {
-    margin-bottom: 2rem !important; } }
+  .landingWindows {
+    margin-top: 1rem !important; } }
 @media (max-width: 475px) {
   h1 {
     font-size: 3rem;
