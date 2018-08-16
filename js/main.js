@@ -2,7 +2,7 @@
 let $ = require("../lib/node_modules/jquery");
 
 let printer = require('./print');
-let nav= require('./scrollnav');
+let nav= require('./scroll');
 
 nav.scrollNav();
 printer.printArt();
