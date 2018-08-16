@@ -74,6 +74,34 @@ ul {
     background-image: $gradient;
 }
 
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.fill ul li a, nav.fill ul li a:after, nav.fill ul li a:before {
+    transition: all .5s;
+}
+
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: $white;
+    height: 1px;
+  }
+
+nav.fill ul li a:hover:after{
+    width: 100%;
+}
+
+nav a:hover {
+    color: $white;
+}
 
 
 nav li a {
@@ -83,14 +111,15 @@ nav li a {
     color: $white;
     line-height: .4;
     letter-spacing: .1rem;
+    padding: 2rem;
 }
 
-nav li a:hover {
-    color: $black !important;
-    border-bottom: 4px solid rgb(118, 170, 255);
-    padding-bottom: 0px;
-    transition: ease-in-out .2s;
-}
+// nav li a:hover {
+//     color: $black !important;
+//     border-bottom: 4px solid rgb(118, 170, 255);
+//     padding-bottom: 0px;
+//     transition: ease-in-out .2s;
+// }
 
 li {
     font-size: 16px;
