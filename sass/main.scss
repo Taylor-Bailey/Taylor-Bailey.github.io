@@ -6,6 +6,7 @@ $subtext: #91a3b1;
 $black: #3b494c;
 $bgblack: #121213;
 $white: #fcfcfc;
+$gradient: linear-gradient(0deg,rgba(42, 123, 255, .9),rgba(63, 193, 255, .9));
 
 
 //font family//
@@ -47,53 +48,41 @@ h3 {
     height: 100vh;
 }
 
-//Navigation//
-.container nav {
-    margin-bottom: 4em !important;
+.tux {
+    display: block;
+    margin: 2rem auto;
 }
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#2A7BFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-  }
-  
-  .custom-toggler.navbar-toggler {
-    border: none !important;
-  } 
-
-  .custom-toggler:focus{
-      outline: none;
-  }
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    color: $black;
 }
 
-nav img {
-    width: 100px;
+.custom-toggler.navbar-toggler {
+    border: none !important;
+} 
+
+.custom-toggler:focus{
+    outline: none;
 }
 
 ul {
     list-style-type: none;
 }
 
-ol {
-    // margin-top: 20px;    
-    // padding-left: 0px;
-    // padding-bottom: 2px;
+.navlist {
+    padding:1rem;
+    background-image: $gradient;
 }
+
+
 
 nav li a {
     font-family: "Titillium Web";
     text-decoration: none;
     font-weight: 800;
-    color: $black;
+    color: $white;
     line-height: .4;
     letter-spacing: .1rem;
-    // padding: 8px 0px !important;
 }
 
 nav li a:hover {
@@ -105,7 +94,6 @@ nav li a:hover {
 
 li {
     font-size: 16px;
-    margin-bottom: 1rem;
     display: inline-block;
     color: $black;
 }
@@ -115,6 +103,9 @@ li:not(:last-child) {
 }
 
 //Landing Window//
+.landingWindows {
+    margin-top: 7rem;
+}
 
 .landingWindow {
     height: 14rem;
@@ -492,19 +483,6 @@ carousel-indicators li:focus{
     }
 }
 
-@media only screen and (min-width: 1200px){
-    // nav {
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    // }
-    // ol li:nth-child(1), ol li:nth-child(2), ol li:nth-child(3) {
-    //     margin-right: 40px;
-    // }
-    // ol{
-    //     padding-left: 0;
-    // }
-}
-
 @media (max-width: 768px){
     .carouselSelector {
         padding: 0 !important;
@@ -522,19 +500,14 @@ carousel-indicators li:focus{
     #active-carousel-indicators {
         bottom: -3.5rem !important;
     }
+    .landingWindow{
+        height: 10rem !important;
+    }
+    .landingWindows{
+        margin-top: 1rem !important;
+    }
 }
 
-@media (max-width: 575.98px) { 
-    .landingWindow {
-        height: 8rem !important;
-    }
-    // ol{
-    //     display: none;
-    // }
-    // .container nav{
-    //     margin-bottom: 2rem !important;
-    // }
-}
 
 @media (max-width: 475px) {
     h1 {

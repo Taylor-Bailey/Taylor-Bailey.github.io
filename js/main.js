@@ -2,10 +2,11 @@
 let $ = require("../lib/node_modules/jquery");
 
 let printer = require('./print');
+let nav= require('./scrollnav');
 
-console.log("hello javascrip");
-
+nav.scrollNav();
 printer.printArt();
+
 
 $(document).on("click" , "#iconSelector", function(){
     event.preventDefault();
@@ -36,3 +37,4 @@ $(document).on("click" , "#iconSelector", function(){
     printer.printArt();
     $('.carousel').carousel('cycle');
   });
+

@@ -11,41 +11,47 @@
 </head>
 <body>
     <header class="landingContainer">
-        <div class="container">
-            <nav class="navbar navbar-light navbar-expand-lg d-flex align-items-center mb-3">
-                <a class="navbar-brand taylorUX"><img src='images/tux3.svg' width="150px" href=".landingContainer"></a>
+        <div class="container">  
+
+            <!-- Navigation-->
+            <nav id="hide-nav" class="navbar fixed-top navbar-light navbar-expand-xl align-items-center mb-3">
                 <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ol>
-                        <li><a class="nav-link" href="#devSection">dev + ux</a></li>
-                        <li><a class="nav-link" href="#artSection">art + graphic design</a></li>
-                        <li><a class="nav-link " href="taylor-bailey-resume.pdf">resume</a></li>
-                        <li><a class="nav-link" href="#aboutSection">about</a></li>
-                    </ol>
-                </div>
+                        <ul class="navlist">
+                            <li><a class="nav-link" href="#devSection">dev + ux</a></li>
+                            <li><a class="nav-link" href="#artSection">art + graphic design</a></li>
+                            <li><a class="nav-link" href="taylor-bailey-resume.pdf">resume</a></li>
+                            <li><a class="nav-link" href="#aboutSection">about</a></li>
+                        </ul>
+                    </div>
             </nav>
+
+            <!-- Landing Windows -->
             <div class="container">
-                <div class="row justify-content-center">
-                    <a href="#devSection" id="devWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5 d-flex flex-column justify-content-center align-items-center" href="#devSection">
-                        <h2 class="landingText">development</h2>
-                        <h2 class="landingText">+</h2>
-                        <h2 class="landingText">ux design</h2>
-                    </a>
-                    <a id="artWindow" id="devWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5 d-flex flex-column justify-content-center align-items-center" href="#artSection">
-                        <h2 class="landingText">art</h2>
-                        <h2 class="landingText">+</h2>
-                        <h2 class="landingText">graphic design</h2>
-                    </a>
-                </div>
-                <div class="row justify-content-center">
-                    <a href="https://drive.google.com/file/d/1rbK71omqTGGb-5aGmrCw-M7C-N2GrsDv/view?usp=sharing" target="_blank" id="resumeWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5 d-flex justify-content-center align-items-center">
-                        <h2 class="landingText">resume</h2>
-                    </a>
-                    <a href="#aboutSection" id="aboutWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-5 d-flex justify-content-center align-items-center" href="#aboutSection">
-                        <h2 class="landingText">about me</h2>
-                    </a>
+                <img class="tux" src='images/tux3.svg' width="150px">
+                <div class="landingWindows">
+                    <div class="row justify-content-center">
+                        <a href="#devSection" id="devWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-center" href="#devSection">
+                            <h2 class="landingText">development</h2>
+                            <h2 class="landingText">+</h2>
+                            <h2 class="landingText">ux design</h2>
+                        </a>
+                        <a id="artWindow" id="devWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-center" href="#artSection">
+                            <h2 class="landingText">art</h2>
+                            <h2 class="landingText">+</h2>
+                            <h2 class="landingText">graphic design</h2>
+                        </a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <a href="https://drive.google.com/file/d/1rbK71omqTGGb-5aGmrCw-M7C-N2GrsDv/view?usp=sharing" target="_blank" id="resumeWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex justify-content-center align-items-center">
+                            <h2 class="landingText">resume</h2>
+                        </a>
+                        <a href="#aboutSection" id="aboutWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex justify-content-center align-items-center" href="#aboutSection">
+                            <h2 class="landingText">about me</h2>
+                        </a>
+                    </div>
                 </div>
         </div>
     </header>

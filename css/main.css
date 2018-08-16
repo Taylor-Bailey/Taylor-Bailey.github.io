@@ -27,8 +27,9 @@ h3 {
   background-color: #fcfcfc;
   height: 100vh; }
 
-.container nav {
-  margin-bottom: 4em !important; }
+.tux {
+  display: block;
+  margin: 2rem auto; }
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#2A7BFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
@@ -39,24 +40,18 @@ h3 {
 .custom-toggler:focus {
   outline: none; }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  color: #3b494c; }
-
-nav img {
-  width: 100px; }
-
 ul {
   list-style-type: none; }
+
+.navlist {
+  padding: 1rem;
+  background-image: linear-gradient(0deg, rgba(42, 123, 255, 0.9), rgba(63, 193, 255, 0.9)); }
 
 nav li a {
   font-family: "Titillium Web";
   text-decoration: none;
   font-weight: 800;
-  color: #3b494c;
+  color: #fcfcfc;
   line-height: .4;
   letter-spacing: .1rem; }
 
@@ -68,12 +63,14 @@ nav li a:hover {
 
 li {
   font-size: 16px;
-  margin-bottom: 1rem;
   display: inline-block;
   color: #3b494c; }
 
 li:not(:last-child) {
   margin-right: 15px; }
+
+.landingWindows {
+  margin-top: 7rem; }
 
 .landingWindow {
   height: 14rem; }
@@ -390,10 +387,13 @@ carousel-indicators li:focus {
     padding: 3rem 2rem !important; }
 
   #active-carousel-indicators {
-    bottom: -3.5rem !important; } }
-@media (max-width: 575.98px) {
+    bottom: -3.5rem !important; }
+
   .landingWindow {
-    height: 8rem !important; } }
+    height: 10rem !important; }
+
+  .landingWindows {
+    margin-top: 1rem !important; } }
 @media (max-width: 475px) {
   h1 {
     font-size: 3rem;

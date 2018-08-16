@@ -3,10 +3,11 @@
 let $ = require("../lib/node_modules/jquery");
 
 let printer = require('./print');
+let nav= require('./scrollnav');
 
-console.log("hello javascrip");
-
+nav.scrollNav();
 printer.printArt();
+
 
 $(document).on("click" , "#iconSelector", function(){
     event.preventDefault();
@@ -37,7 +38,9 @@ $(document).on("click" , "#iconSelector", function(){
     printer.printArt();
     $('.carousel').carousel('cycle');
   });
-},{"../lib/node_modules/jquery":3,"./print":2}],2:[function(require,module,exports){
+
+
+},{"../lib/node_modules/jquery":4,"./print":2,"./scrollnav":3}],2:[function(require,module,exports){
 'use strict';
 
 let $ = require('jquery');
@@ -187,7 +190,29 @@ let printArt = () => {
 };
 
 module.exports = { printArt, printIcons, printLogos };
-},{"jquery":3}],3:[function(require,module,exports){
+},{"jquery":4}],3:[function(require,module,exports){
+'use strict';
+let $ = require("../lib/node_modules/jquery");
+
+let scrollNav = () => {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 930 ) {
+                $('#hide-nav')
+                .fadeIn(600)
+                .css('display', 'flex')
+                .css('flex-direction', 'row')
+                .css('justify-content', 'end');
+            } else {
+                $('#hide-nav')
+                .fadeOut(600);
+            }
+        });
+    });
+};
+
+module.exports = { scrollNav };
+},{"../lib/node_modules/jquery":4}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
