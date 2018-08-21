@@ -45,7 +45,10 @@ ul {
 
 .navlist {
   padding: 1rem;
-  background-image: linear-gradient(0deg, rgba(42, 123, 255, 0.9), rgba(63, 193, 255, 0.9)); }
+  background-image: linear-gradient(0deg, rgba(42, 123, 255, 0.9), rgba(63, 193, 255, 0.9));
+  text-align: right;
+  display: inline-block;
+  float: right; }
 
 nav.fill ul li a {
   position: relative; }
@@ -55,7 +58,7 @@ nav.fill ul li a, nav.fill ul li a:after, nav.fill ul li a:before {
 
 nav.fill ul li a:after {
   position: absolute;
-  bottom: -4px;
+  bottom: -.7rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -78,7 +81,8 @@ nav li a {
   color: #fcfcfc;
   line-height: .4;
   letter-spacing: .1rem;
-  padding: 2rem; }
+  padding: 0 !important;
+  margin: 0 .5rem; }
 
 li {
   font-size: 16px;
@@ -292,7 +296,7 @@ a:hover .groupProject h3:after {
 
 #artSection {
   background-image: linear-gradient(360deg, #e0e2ee, #fcfcfc);
-  padding: 5rem 5rem 6rem 5rem; }
+  padding: 6rem 5rem 7rem 5rem; }
 
 .carousel-inner {
   box-shadow: 0px 2px 40px -10px rgba(0, 0, 0, 0.2); }
@@ -438,5 +442,33 @@ carousel-indicators li:focus {
 @media (min-width: 240px) {
   h1 {
     text-align: center; } }
+.app-logo {
+  display: block;
+  width: 180px;
+  margin: auto; }
+
+.name {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 2rem; }
+
+.pantry-intro {
+  width: 100%;
+  margin-top: 5rem;
+  color: #3b494c;
+  padding: 5rem; }
+
+.app-description {
+  color: #ec411f;
+  font-weight: 800; }
+
+.red-rectangle {
+  height: 20rem;
+  background-color: #ec411f; }
+
+.pantry-mockup {
+  position: relative;
+  left: 25%;
+  bottom: 35%; }
 
 /*# sourceMappingURL=main.css.map */
