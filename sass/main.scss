@@ -585,7 +585,7 @@ margin: auto;
 
 .pantry-intro {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 1rem;
     color: $black;
     padding: 5rem;
 }
@@ -598,10 +598,39 @@ margin: auto;
 .red-rectangle {
     height: 20rem;
     background-color: #ec411f;
+    margin-bottom: 7rem;
 }
 
 .pantry-mockup {
     position: relative;
     left: 25%;
     bottom: 35%;
+}
+
+.capstone-1-description {
+    transform: translateY(-6px);
+}
+
+.nss-link {
+    color:#ec411f; 
+    font-weight: bold;
+}
+
+.nss-link:hover {
+    text-decoration: none;
+    color: #ff645f;
+}
+
+.heading {
+    color:#ec411f; 
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.survey-stat-icon {
+    display: block;
+    width: 45%;
+    margin: auto;
 }
