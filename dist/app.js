@@ -199,10 +199,7 @@ let scrollNav = () => {
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > 930 ) {
                 $('#hide-nav')
-                .fadeIn(600)
-                .css('display', 'flex')
-                .css('flex-direction', 'row')
-                .css('justify-content', 'end');
+                .fadeIn(600);
             } else {
                 $('#hide-nav')
                 .fadeOut(600);

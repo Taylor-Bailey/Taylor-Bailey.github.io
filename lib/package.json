@@ -10,21 +10,22 @@
   "license": "ISC",
   "devDependencies": {
     "browserify": "^13.1.1",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "jquery": "^3.3.1",
-    "jshint": "^2.9.4",
+    "jshint": "^2.9.6",
     "jshint-stylish": "^2.2.1",
     "matchdep": "^1.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "firebase": "^3.6.9",
+    "canvasjs": "^1.8.1",
+    "firebase": "^5.4.0",
     "hover.css": "^2.3.2"
   }
 }

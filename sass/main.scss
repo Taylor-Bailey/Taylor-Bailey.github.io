@@ -72,6 +72,9 @@ ul {
 .navlist {
     padding:1rem;
     background-image: $gradient;
+    text-align: right;
+    display: inline-block;
+    float: right;
 }
 
 nav.fill ul li a {
@@ -84,7 +87,7 @@ nav.fill ul li a, nav.fill ul li a:after, nav.fill ul li a:before {
 
 nav.fill ul li a:after {
     position: absolute;
-    bottom: -4px;
+    bottom: -.7rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -103,7 +106,6 @@ nav a:hover {
     color: $white;
 }
 
-
 nav li a {
     font-family: "Titillium Web";
     text-decoration: none;
@@ -111,7 +113,8 @@ nav li a {
     color: $white;
     line-height: .4;
     letter-spacing: .1rem;
-    padding: 2rem;
+    padding: 0 !important;
+    margin: 0 .5rem;
 }
 
 li {
@@ -376,7 +379,7 @@ width: 100%;
 // Art Section //
 #artSection {
     background-image: linear-gradient(360deg,(rgb(224, 226, 238),($white)));
-    padding: 5rem 5rem 6rem 5rem;
+    padding: 6rem 5rem 7rem 5rem;
 }
 
 .carousel-inner {
@@ -566,3 +569,39 @@ carousel-indicators li:focus{
     }
 }
 
+//Pantry Page//
+
+.app-logo {
+display: block;
+width: 180px;
+margin: auto;
+}
+ 
+.name {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 2rem;
+}
+
+.pantry-intro {
+    width: 100%;
+    margin-top: 5rem;
+    color: $black;
+    padding: 5rem;
+}
+
+.app-description {
+    color: #ec411f;
+    font-weight: 800;
+}
+
+.red-rectangle {
+    height: 20rem;
+    background-color: #ec411f;
+}
+
+.pantry-mockup {
+    position: relative;
+    left: 25%;
+    bottom: 35%;
+}
