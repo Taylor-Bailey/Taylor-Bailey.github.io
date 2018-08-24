@@ -7,6 +7,7 @@ let scrollNav = () => {
             if ($(this).scrollTop() > 930 ) {
                 $('#hide-nav')
                 .fadeIn(600);
+
             } else {
                 $('#hide-nav')
                 .fadeOut(600);

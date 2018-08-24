@@ -10,16 +10,16 @@ $gradient: linear-gradient(0deg,rgba(42, 123, 255, .9),rgba(63, 193, 255, .9));
 
 
 //font family//
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500|Titillium+Web');
 
 //main styles//
 body {
-    font-family: "Open Sans", "Arial";
+    font-family: "Roboto", "Arial";
     background-color: $white;
     color: $black;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Titillium Web";
 }
 
@@ -73,8 +73,8 @@ ul {
     padding:1rem;
     background-image: $gradient;
     text-align: right;
-    display: inline-block;
     float: right;
+    margin-right: 15px;
 }
 
 nav.fill ul li a {
@@ -642,4 +642,24 @@ margin: auto;
 
 .survey-row p {
     font-weight: bold;
+}
+
+.parallax {
+    background-image: url('../images/persona1.jpg');
+    height: 20rem;
+    width: 20rem;
+    background-attachment: fixed;
+    background-position-x: -7rem;
+    background-position-y: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.block-quote {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.red-quotes {
+    color: #ec411f;
 }
