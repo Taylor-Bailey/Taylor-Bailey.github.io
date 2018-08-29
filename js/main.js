@@ -5,6 +5,7 @@ let printer = require('./print');
 let nav= require('./scroll');
 
 nav.scrollNav();
+nav.scrollBrand();
 printer.printArt();
 
 

@@ -6,6 +6,7 @@ let printer = require('./print');
 let nav= require('./scroll');
 
 nav.scrollNav();
+nav.scrollBrand();
 printer.printArt();
 
 
@@ -208,6 +209,20 @@ let scrollNav = () => {
     });
 };
 
+let scrollBrand = () => {
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 150 ) {
+        $('.name')
+        .fadeOut(600);
+      }else{
+        $('.name')
+        .fadeIn(600);
+      }
+    });
+  });
+};
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't link to anything
@@ -243,7 +258,7 @@ $('a[href*="#"]')
     }
   });
 
-module.exports = { scrollNav };
+module.exports = { scrollNav, scrollBrand };
 },{"../lib/node_modules/jquery":4}],4:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.3.1
