@@ -7,7 +7,6 @@ let scrollNav = () => {
             if ($(this).scrollTop() > 930 ) {
                 $('#hide-nav')
                 .fadeIn(600);
-
             } else {
                 $('#hide-nav')
                 .fadeOut(600);
@@ -18,7 +17,7 @@ let scrollNav = () => {
 
 // Select all links with hashes
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
+  // Remove links that don't link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {

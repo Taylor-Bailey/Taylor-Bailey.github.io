@@ -32,7 +32,7 @@ h3 {
   margin: 2rem auto; }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#2A7BFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#3fc1ff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important; }
 
 .custom-toggler.navbar-toggler {
   border: none !important; }
@@ -167,7 +167,7 @@ li:not(:last-child) {
 #devSection {
   background-image: linear-gradient(360deg, #121213, #252525);
   color: #fcfcfc;
-  padding: 3.5em 0; }
+  padding-top: 3.5rem; }
 
 .pantrySection, .bearArmsSection, .groupProjectsSection {
   margin-bottom: 5rem;
@@ -277,22 +277,25 @@ a:hover .groupProject h3:after {
 
 #aboutSection {
   background-color: #fcfcfc;
-  padding: 3.5rem 0; }
+  padding: 3.5rem 0;
+  color: #2A7BFF; }
 
 .square {
-  width: 300px;
-  height: 350px;
+  height: inherit;
   overflow: hidden; }
 
 .pic {
   background: url("../images/me.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px -50px;
-  height: 450px; }
+  background-position: 0px -29px;
+  height: 100%; }
 
 .greeting {
   letter-spacing: 4px; }
+
+.aboutMe p {
+  color: #3b494c; }
 
 #artSection {
   background-image: linear-gradient(360deg, #e0e2ee, #fcfcfc);
@@ -483,6 +486,14 @@ carousel-indicators li:focus {
   text-decoration: none;
   color: #ff645f; }
 
+.nss-link2 {
+  color: #2A7BFF;
+  font-weight: bold; }
+
+.nss-link2:hover {
+  text-decoration: none;
+  color: #81d7ff; }
+
 .heading {
   color: #ec411f;
   font-weight: bold;
@@ -497,9 +508,6 @@ carousel-indicators li:focus {
 
 .redText {
   color: #ec411f;
-  font-weight: bold; }
-
-.survey-row p {
   font-weight: bold; }
 
 .parallax {
@@ -517,6 +525,15 @@ carousel-indicators li:focus {
   font-weight: 100; }
 
 .red-quotes {
-  color: #ec411f; }
+  color: #ec411f;
+  font-weight: bold; }
+
+.bar {
+  height: 12px;
+  background-color: #ededed; }
+
+.barFill {
+  height: 100%;
+  background-color: #ec411f; }
 
 /*# sourceMappingURL=main.css.map */

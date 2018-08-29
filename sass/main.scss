@@ -1,6 +1,6 @@
 // palette //
 $lightblue: #81d7ff; 
-$blue: rgb(63, 193, 255);
+$blue: #3fc1ff;
 $darkblue: #2A7BFF;
 $subtext: #91a3b1;
 $black: #3b494c;
@@ -54,7 +54,7 @@ h3 {
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#2A7BFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#3fc1ff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .custom-toggler.navbar-toggler {
@@ -219,7 +219,7 @@ li:not(:last-child) {
 #devSection {
     background-image: linear-gradient(360deg,($bgblack),(#252525));
     color: $white;
-    padding: 3.5em 0;
+    padding-top: 3.5rem;
 }
 
 .pantrySection, .bearArmsSection, .groupProjectsSection {
@@ -356,24 +356,28 @@ width: 100%;
 #aboutSection {
     background-color:$white;
     padding: 3.5rem 0;
+    color: $darkblue;
 }
 
 .square {
-    width: 300px;
-    height: 350px;
+    height: inherit;
     overflow: hidden;
   }
 
   .pic {
     background: url("../images/me.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px -50px;
-    height: 450px;
+    background-position: 0px -29px;
+    height: 100%;
   }
 
 .greeting {
     letter-spacing: 4px;
+}
+
+.aboutMe p {
+    color: $black;
 }
 
 // Art Section //
@@ -616,9 +620,21 @@ margin: auto;
     font-weight: bold;
 }
 
+
 .nss-link:hover {
     text-decoration: none;
     color: #ff645f;
+}
+
+.nss-link2 {
+    color: $darkblue; 
+    font-weight: bold;
+}
+
+
+.nss-link2:hover {
+    text-decoration: none;
+    color: $lightblue;
 }
 
 .heading {
@@ -640,9 +656,9 @@ margin: auto;
      font-weight: bold;
 }
 
-.survey-row p {
-    font-weight: bold;
-}
+// .survey-row p {
+//     // font-weight: bold;
+// }
 
 .parallax {
     background-image: url('../images/persona1.jpg');
@@ -662,4 +678,16 @@ margin: auto;
 
 .red-quotes {
     color: #ec411f;
+    font-weight: bold;
+
+}
+
+.bar {
+    height: 12px;
+    background-color: rgb(237, 237, 237);
+}
+
+.barFill {
+    height: 100%;
+    background-color: #ec411f;
 }
