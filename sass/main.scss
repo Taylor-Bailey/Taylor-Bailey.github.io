@@ -559,7 +559,7 @@ carousel-indicators li:focus{
         padding: 0 .5rem;
     }
     .carouselSelector h2{
-        font-size: 1.8rem !important;
+        font-size: 1.8rem;
     }
     .carousel-indicators li {
         margin: .4rem  !important;
@@ -568,6 +568,9 @@ carousel-indicators li:focus{
 @media (max-width: 405px) {
     .carousel-indicators li {
         margin: .2rem  !important;
+    }
+    .carouselSelector h2 {
+        font-size: 1.5rem;
     }
 }
 @media (max-width: 321px) {
