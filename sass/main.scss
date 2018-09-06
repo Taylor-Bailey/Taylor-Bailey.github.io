@@ -297,7 +297,12 @@ li:not(:last-child) {
     transform: rotate(45deg) translateY(4px) translateX(4px);
     box-shadow: none;
     transition: ease-in-out .1s;
-} 
+}
+
+.uxButton {
+    position: relative;
+    left: 20%;
+}
 
 .textRotator {
     transform: rotate(-45deg);
