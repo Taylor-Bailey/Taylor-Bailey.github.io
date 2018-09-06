@@ -24,8 +24,7 @@ h3 {
 
 .landingContainer {
   margin-bottom: 3em;
-  background-color: #fcfcfc;
-  height: 100vh; }
+  background-color: #fcfcfc; }
 
 .tux {
   display: block;
@@ -292,7 +291,7 @@ a:hover .groupProject h3:after {
   height: 100%; }
 
 .greeting {
-  letter-spacing: 4px; }
+  letter-spacing: 0px; }
 
 .aboutMe p {
   color: #3b494c; }
@@ -330,8 +329,7 @@ a:hover .groupProject h3:after {
   cursor: pointer;
   transform: rotate(45deg);
   transition: .2s ease-in-out;
-  border-radius: none;
-  margin: .7rem !important; }
+  border-radius: none; }
 
 .carousel-indicators li:hover {
   background-image: none !important;
@@ -398,9 +396,13 @@ carousel-indicators li:focus {
 @media (min-width: 1400px) {
   .container {
     max-width: 1350px; } }
-@media (max-width: 768px) {
+@media (min-width: 766px) {
+  .carouselSelector h2 {
+    font-size: 2.25rem; } }
+@media (max-width: 767px) {
   .carouselSelector {
-    padding: 0 !important; }
+    padding: 0 !important;
+    margin-bottom: 2rem; }
 
   .carouselSelector ul {
     margin: auto;
@@ -419,7 +421,11 @@ carousel-indicators li:focus {
     height: 10rem !important; }
 
   .landingWindows {
-    margin-top: 1rem !important; } }
+    margin-top: 1rem !important; }
+
+  .square {
+    height: 25rem;
+    margin-bottom: 2.5rem; } }
 @media (max-width: 475px) {
   h1 {
     font-size: 3rem;
@@ -516,7 +522,7 @@ carousel-indicators li:focus {
   width: 20rem;
   background-attachment: fixed;
   background-position-x: -7rem;
-  background-position-y: 8rem;
+  background-position-y: 1rem;
   background-repeat: no-repeat;
   background-size: contain; }
 
