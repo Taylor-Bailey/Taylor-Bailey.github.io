@@ -45,7 +45,6 @@ h3 {
 .landingContainer {
     margin-bottom: 3em;
     background-color: $white;
-    height: 100vh;
 }
 
 .tux {
@@ -373,7 +372,7 @@ width: 100%;
   }
 
 .greeting {
-    letter-spacing: 4px;
+    letter-spacing: 0px;
 }
 
 .aboutMe p {
@@ -422,7 +421,7 @@ width: 100%;
     transform: rotate(45deg);
     transition: .2s ease-in-out;
     border-radius: none;
-    margin: .7rem !important;
+    // margin: .7rem !important;
 }
 
 .carousel-indicators li:hover {
@@ -512,13 +511,20 @@ carousel-indicators li:focus{
     }
 }
 
-@media (max-width: 768px){
+@media (min-width: 766px){
+    .carouselSelector h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 767px){
     .carouselSelector {
         padding: 0 !important;
+        margin-bottom: 2rem;
     }
     .carouselSelector ul {
         margin: auto;
-        padding-left: 0
+        padding-left: 0;
     }
     .carouselSelector ul li {
         display: inline-block;
@@ -534,6 +540,10 @@ carousel-indicators li:focus{
     }
     .landingWindows{
         margin-top: 1rem !important;
+    }
+    .square {
+        height: 25rem;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -666,7 +676,7 @@ margin: auto;
     width: 20rem;
     background-attachment: fixed;
     background-position-x: -7rem;
-    background-position-y: 8rem;
+    background-position-y: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
 }
