@@ -516,6 +516,22 @@ carousel-indicators li:focus{
     }
 }
 
+@media (max-width: 991px){
+    .capstone-1-description {
+        margin-top: 9rem;
+        text-align: center !important;
+    }
+    .tech {
+        text-align: center !important;
+    }
+    .red-rectangle{
+        text-align: center;
+    }
+    .pantry-mockup{
+        left: 0 !important;
+    }
+}
+
 @media (min-width: 766px){
     .carouselSelector h2 {
         font-size: 2.25rem;
@@ -549,6 +565,9 @@ carousel-indicators li:focus{
     .square {
         height: 25rem;
         margin-bottom: 2.5rem;
+    }
+    .devGoal {
+        margin-bottom: 1rem;
     }
 }
 
