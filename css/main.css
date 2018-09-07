@@ -455,7 +455,11 @@ carousel-indicators li:focus {
     font-size: 1.8rem; }
 
   .carousel-indicators li {
-    margin: .4rem  !important; } }
+    margin: .4rem  !important; }
+
+  .pantry-mockup {
+    height: 90%;
+    bottom: -3% !important; } }
 @media (max-width: 405px) {
   .carousel-indicators li {
     margin: .2rem  !important; }
