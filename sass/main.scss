@@ -316,7 +316,7 @@ li:not(:last-child) {
 .workList li {
     margin-bottom: .5rem;
     display: block;
-    color: #91a3b1;
+    color: #9cc7e8;
     
 }
 
@@ -516,6 +516,22 @@ carousel-indicators li:focus{
     }
 }
 
+@media (max-width: 991px){
+    .capstone-1-description {
+        margin-top: 9rem;
+        text-align: center !important;
+    }
+    .tech {
+        text-align: center !important;
+    }
+    .red-rectangle{
+        text-align: center;
+    }
+    .pantry-mockup{
+        left: 0 !important;
+    }
+}
+
 @media (min-width: 766px){
     .carouselSelector h2 {
         font-size: 2.25rem;
@@ -535,7 +551,7 @@ carousel-indicators li:focus{
         display: inline-block;
     }
     #artSection {
-        padding: 3rem 2rem !important;
+        padding: 3rem 2rem 5rem !important
     }
     #active-carousel-indicators {
         bottom: -3.5rem !important;
@@ -550,6 +566,9 @@ carousel-indicators li:focus{
         height: 25rem;
         margin-bottom: 2.5rem;
     }
+    .devGoal {
+        margin-bottom: 1rem;
+    }
 }
 
 
@@ -563,6 +582,10 @@ carousel-indicators li:focus{
     }
     .carousel-indicators li {
         margin: .4rem  !important;
+    }
+    .pantry-mockup{
+        height: 90%;
+        bottom: -3% !important;
     }
 }
 @media (max-width: 405px) {
