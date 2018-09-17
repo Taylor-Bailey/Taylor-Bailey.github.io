@@ -571,6 +571,16 @@ carousel-indicators li:focus{
     }
 }
 
+@media (max-width: 541px) {
+    .navlist li {
+        display: block;
+        margin-right: 0;
+    }
+    .nav-link {
+        display: inline;
+        margin: 0;
+    }
+}
 
 @media (max-width: 475px) {
     h1 {
