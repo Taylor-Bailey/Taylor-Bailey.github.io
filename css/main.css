@@ -394,8 +394,11 @@ carousel-indicators li:focus {
   cursor: pointer; }
 
 .activeSelector {
-  color: #3fc1ff;
-  text-shadow: 2px 10px 24px 6px rgba(0, 0, 0, 0.5); }
+  color: #2A7BFF;
+  font-weight: bold; }
+
+.darkBlueText {
+  color: #2A7BFF; }
 
 @media (min-width: 1400px) {
   .container {
