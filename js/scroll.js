@@ -44,7 +44,7 @@ $('a[href*="#"]')
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
+        // Only prevent default if animation is actually going to happen
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top

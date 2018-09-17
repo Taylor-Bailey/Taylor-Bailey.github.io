@@ -105,6 +105,16 @@ nav a:hover {
     color: $white;
 }
 
+li {
+    font-size: 16px;
+    display: inline-block;
+    color: $black;
+}
+
+li:not(:last-child) {
+    margin-right: 15px;
+}
+
 nav li a {
     font-family: "Titillium Web";
     text-decoration: none;
@@ -116,15 +126,6 @@ nav li a {
     margin: 0 .5rem;
 }
 
-li {
-    font-size: 16px;
-    display: inline-block;
-    color: $black;
-}
-
-li:not(:last-child) {
-    margin-right: 15px;
-}
 
 //Landing Window//
 .landingWindows {
@@ -253,14 +254,15 @@ li:not(:last-child) {
     color: $blue;
 }
 
-.appDescription li {
+.appDescription {
+    li {
     color: $subtext;
     display: block;
-}
-
-.appDescription p {
-    font-size: 20px;
-    margin-bottom: 2em;
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 2em;
+    }
 }
 
 .devIcon{
@@ -311,13 +313,12 @@ li:not(:last-child) {
 
 .workList{
     padding-left: 0;
-}
-
-.workList li {
-    margin-bottom: .5rem;
-    display: block;
-    color: #9cc7e8;
-    
+    li {
+        margin-bottom: .5rem;
+        display: block;
+        color: #9cc7e8;
+        
+    }
 }
 
 .groupProjects {
@@ -328,31 +329,29 @@ li:not(:last-child) {
     text-decoration: none;
 }
 
-
-      /* stroke */
- a .groupProject h3 {
-        position: relative;
+a .groupProject h3 {
+    position: relative;
 }
 
 a .groupProject h3, a .groupProject h3:after, a .groupProject h3:before {
     transition: all .5s;
 }
 
- a .groupProject h3:after {
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 0%;
-        content: '';
-        color: transparent;
-        background: $blue;
-        height: 2px;
-      }
+a .groupProject h3:after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: $blue;
+    height: 2px;
+}
 
 a:hover .groupProject h3:after {
-width: 100%;
+    width: 100%;
 }
 
 // About Section //
@@ -366,15 +365,15 @@ width: 100%;
 .square {
     height: inherit;
     overflow: hidden;
-  }
+}
 
-  .pic {
+.pic {
     background: url("../images/me.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px -29px;
     height: 100%;
-  }
+}
 
 .greeting {
     letter-spacing: 0px;
@@ -426,7 +425,6 @@ width: 100%;
     transform: rotate(45deg);
     transition: .2s ease-in-out;
     border-radius: none;
-    // margin: .7rem !important;
 }
 
 .carousel-indicators li:hover {
@@ -448,7 +446,6 @@ carousel-indicators li:focus{
 }
 
 .carousel-control-next {
-    // right: -4rem;
     opacity: 1;
     transition: .3ms ease-in-out;
 }
@@ -458,7 +455,6 @@ carousel-indicators li:focus{
 }
 
 .carousel-control-prev {
-    // left: -4rem;
     opacity: 1;
 }
 
@@ -493,14 +489,12 @@ carousel-indicators li:focus{
 .carouselSelector{
     padding-right: 30px;
     padding-left: 0px;
-}
-
-.carouselSelector li{
-    display: inline;
-}
-
-.carouselSelector h2{
-    cursor: pointer;
+    li{
+        display: inline;
+    }
+    h2{
+        cursor: pointer;
+    }
 }
 
 .activeSelector {
@@ -711,10 +705,6 @@ margin: auto;
      font-weight: bold;
 }
 
-// .survey-row p {
-//     // font-weight: bold;
-// }
-
 .parallax {
     background-image: url('../images/persona1.jpg');
     height: 20rem;
@@ -734,7 +724,6 @@ margin: auto;
 .red-quotes {
     color: #ec411f;
     font-weight: bold;
-
 }
 
 .bar {

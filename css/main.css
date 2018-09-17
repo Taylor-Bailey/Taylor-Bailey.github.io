@@ -73,6 +73,14 @@ nav.fill ul li a:hover:after {
 nav a:hover {
   color: #fcfcfc; }
 
+li {
+  font-size: 16px;
+  display: inline-block;
+  color: #3b494c; }
+
+li:not(:last-child) {
+  margin-right: 15px; }
+
 nav li a {
   font-family: "Titillium Web";
   text-decoration: none;
@@ -82,14 +90,6 @@ nav li a {
   letter-spacing: .1rem;
   padding: 0 !important;
   margin: 0 .5rem; }
-
-li {
-  font-size: 16px;
-  display: inline-block;
-  color: #3b494c; }
-
-li:not(:last-child) {
-  margin-right: 15px; }
 
 .landingWindows {
   margin-top: 7rem; }
@@ -197,7 +197,6 @@ li:not(:last-child) {
 .appDescription li {
   color: #91a3b1;
   display: block; }
-
 .appDescription p {
   font-size: 20px;
   margin-bottom: 2em; }
@@ -244,11 +243,10 @@ li:not(:last-child) {
 
 .workList {
   padding-left: 0; }
-
-.workList li {
-  margin-bottom: .5rem;
-  display: block;
-  color: #9cc7e8; }
+  .workList li {
+    margin-bottom: .5rem;
+    display: block;
+    color: #9cc7e8; }
 
 .groupProjects {
   border: 2px solid #fcfcfc; }
@@ -256,7 +254,6 @@ li:not(:last-child) {
 .groupProjectsSection a:hover {
   text-decoration: none; }
 
-/* stroke */
 a .groupProject h3 {
   position: relative; }
 
@@ -386,12 +383,10 @@ carousel-indicators li:focus {
 .carouselSelector {
   padding-right: 30px;
   padding-left: 0px; }
-
-.carouselSelector li {
-  display: inline; }
-
-.carouselSelector h2 {
-  cursor: pointer; }
+  .carouselSelector li {
+    display: inline; }
+  .carouselSelector h2 {
+    cursor: pointer; }
 
 .activeSelector {
   color: #2A7BFF;
