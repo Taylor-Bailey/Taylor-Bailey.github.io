@@ -33,22 +33,22 @@
                 <img class="tux" src='images/tux3.svg' width="150px">
                 <div class="landingWindows">
                     <div class="row justify-content-center">
-                        <a href="#devSection" id="devWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-center" href="#devSection">
+                        <a  id="devWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-center" href="#devSection" tabindex="1">
                             <h2 class="landingText">development</h2>
                             <h2 class="landingText">+</h2>
                             <h2 class="landingText">ux design</h2>
                         </a>
-                        <a id="artWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-center" href="#artSection">
+                        <a id="artWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex flex-column justify-content-center align-items-center" href="#artSection" tabindex="2">
                             <h2 class="landingText">art</h2>
                             <h2 class="landingText">+</h2>
                             <h2 class="landingText">graphic design</h2>
                         </a>
                     </div>
                     <div class="row justify-content-center">
-                        <a href="https://drive.google.com/file/d/1rbK71omqTGGb-5aGmrCw-M7C-N2GrsDv/view?usp=sharing" target="_blank" id="resumeWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex justify-content-center align-items-center">
+                        <a href="https://drive.google.com/file/d/1rbK71omqTGGb-5aGmrCw-M7C-N2GrsDv/view?usp=sharing" target="_blank" id="resumeWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex justify-content-center align-items-center" tabindex="3">
                             <h2 class="landingText">resume</h2>
                         </a>
-                        <a href="#aboutSection" id="aboutWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex justify-content-center align-items-center" href="#aboutSection">
+                        <a id="aboutWindow" class="col-12 landingWindow m-2 col-md-5 col-sm-12 d-flex justify-content-center align-items-center" href="#aboutSection" tabindex="4">
                             <h2 class="landingText">about me</h2>
                         </a>
                     </div>
@@ -61,7 +61,7 @@
         <section id="devSection">
             <!-- Solo Projects -->
             <div class="flex-row d-flex justify-content-center mt-5">
-                <h1 class="devHeading">solo projects</h1>
+                <h1 class="devHeading" tabindex="5">solo projects</h1>
             </div>
             <!-- Pantry Section -->
             <div class="container-fluid pantrySection">
@@ -72,17 +72,17 @@
                     <div class="d-flex align-items-center flex-column col-lg-3 col-md-7 col-10 order-lg-2 order-md-3 order-3 mb-5">
                         <img src="./images/logo/pantry-logo.svg" class="devIcon">
                         <div class="row">
-                            <a href="https://github.com/Taylor-Bailey/Pantry-Capstone-1" target="_blank" class="col-6">
-                                <button class="projectButton "><p class="textRotator">code</p></button>
+                            <a href="https://github.com/Taylor-Bailey/Pantry-Capstone-1" target="_blank" class="col-6" >
+                                <button class="projectButton" tabindex="6"><p class="textRotator">code</p></button>
                             </a>
                             <a href="https://taylor-bailey.github.io/Pantry-Capstone-1/" target="_blank" class="col-6" style="
                             transform: translateX(2rem)">
-                                <button  class="projectButton "><p class="textRotator">live</p></button>
+                                <button  class="projectButton" tabindex="7"><p class="textRotator">live</p></button>
                             </a>
                         </div>
                         <div class="row">
                             <a href="pantry.html" class="col-12 text-center">
-                                <button  class="projectButton uxButton"><p class="textRotator">ux</p></button>
+                                <button  class="projectButton uxButton" tabindex="8"><p class="textRotator">ux</p></button>
                             </a>
                         </div><!-- /Logo & Buttons -->
                     </div>
@@ -123,7 +123,7 @@
                         <img src="./images/logo/beararms-logo.png" class="devIcon">
                         <div class="buttonRow row">
                             <a href="https://github.com/Taylor-Bailey/Pantry-Capstone-1" target="_blank">
-                                <button id="codeButton" class="projectButton col align-self-center" style="margin: 1rem">
+                                <button id="codeButton" class="projectButton col align-self-center" style="margin: 1rem" tabindex="9">
                                     <p class="textRotator">code</p>
                                 </button>
                             </a>
@@ -135,7 +135,7 @@
             </div><!-- /Bear Arms Section Container-->
             <!-- Group Projects Heading-->
             <div class="flex-row d-flex justify-content-center mt-5">
-                <h1 class="devHeading">group projects</h1>
+                <h1 class="devHeading" tabindex="10">group projects</h1>
             </div>
             <!-- Group Projects Container -->
             <div class="container-fluid groupProjectsSection stroke">
@@ -143,10 +143,10 @@
                     <div class="row justify-content-md-around justify-content-center">
                         <!-- Nashville Open Data Project -->
                         <div class="col-md-4 col-lg-3 col-9">
-                            <a href="https://github.com/nss-day-cohort-24/wyfy/blob/master/README.md" target="_blank">    
+                            <a href="https://github.com/nss-day-cohort-24/wyfy/blob/master/README.md" target="_blank" tabindex="11">    
                                 <img src="./images/logo/wyfy-logo.svg">
                                 <div class="mt-5 text-center groupProject">
-                                    <h3 class="groupProjectTitle text-center">nashville open data</h3>
+                                    <h3 class="groupProjectTitle text-center" >nashville open data</h3>
                                     <p class="text-center">wyfy</p>
                                 </div>
                             </a>
@@ -160,7 +160,7 @@
                         </div><!-- /Nashville Open Data Project -->
                         <!-- NSS Class Site -->
                         <div class="col-md-4 col-lg-3 col-9">
-                            <a href="https://nss-day-cohort-24.github.io/Class-Site/#Meet" target="_blank">
+                            <a href="https://nss-day-cohort-24.github.io/Class-Site/#Meet" target="_blank" tabindex="12">
                                 <img src="./images/logo/unicorn-no-bg.svg">
                                 <div class="mt-5 text-center groupProject">
                                     <h3 class="groupProjectTitle text-center">nashville software school</h3>
@@ -176,7 +176,7 @@
                         </div><!-- /NSS Class Site -->
                         <!-- Siloam -->
                         <div class="col-md-4 col-lg-3 col-9">
-                            <a href="https://siloamhealth.org/glocal" target="_blank">
+                            <a href="https://siloamhealth.org/glocal" target="_blank" tabindex="13">
                                 <img src="./images/logo/siloam.svg">
                                 <div class="mt-5 text-center groupProject">
                                     <h3 class="groupProjectTitle">hack for the community</h3>
@@ -203,13 +203,13 @@
                 <div class="d-flex align-items-center carouselSelector col-12 col-md-4">
                     <ul>
                         <li>
-                            <h2 id="iconSelector" class=""><span class="darkBlueText">//</span> icons</h2> 
+                            <h2 id="iconSelector" tabindex="14"><span class="darkBlueText">//</span> icons</h2> 
                         </li>
                         <li>
-                            <h2 id="logoSelector" class=""><span class="darkBlueText">//</span> logos</h2> 
+                            <h2 id="logoSelector" tabindex="15"><span class="darkBlueText">//</span> logos</h2> 
                         </li> 
                         <li>
-                            <h2 id="artSelector" class="activeSelector"><span class="darkBlueText">//</span> art</h2> 
+                            <h2 id="artSelector" class="activeSelector" tabindex="16"><span class="darkBlueText">//</span> art</h2> 
                         </li> 
                     </ul>
                 </div><!-- /Carousel Selector Text // icons // logos // art -->
@@ -231,16 +231,16 @@
                     <!-- About Me Column -->
                     <div class="aboutMe col-12 col-md-6">
                         <!-- Greeting -->
-                        <h1 class="greeting text-md-left mb-5">Hi, I'm Taylor</h1> 
+                        <h1 class="greeting text-md-left mb-5" tabindex="17">Hi, I'm Taylor</h1> 
                         <!-- About Me Text -->
-                        <p>I am a User Experience Designer and Front End Developer who graduated from <a class="nss-link2"  href="http://nashvillesoftwareschool.com/" target="blank_">Nashville Software School.</a>  I'm a true creative at heart, and participating in the challenging multidisciplinary bootcamp that NSS provided prepared me well for an exciting career in software development.</p>
+                        <p>I am a User Experience Designer and Front End Developer who graduated from <a class="nss-link2"  href="http://nashvillesoftwareschool.com/" target="blank_" tabindex="18">Nashville Software School.</a>  I'm a true creative at heart, and participating in the challenging multidisciplinary bootcamp that NSS provided prepared me well for an exciting career in software development.</p>
 
                         <p>My passion lives in pulling the future into the present, in marrying the proven with the potential, in drinking enough coffee to know what that even means.</p>
 
                         <p>But seriously, I'm elated to provide you with my keen eye for coherent interface design, as well as my discerning mind and warm heart for creating instinctive user experiences and solving your unique challenges.</p>
                                 
                         
-                        <p>Take a look at my <a href="https://drive.google.com/file/d/1rbK71omqTGGb-5aGmrCw-M7C-N2GrsDv/view?usp=sharing" class="nss-link2" target="_blank">Resume</a> and shoot me an email at <a href="mailto:taylorbailey@protonmail.com?Subject=Hello%20Taylor!" target="_top" class="nss-link2">taylorbailey@protonmail.com</a>.</p>
+                        <p>Take a look at my <a href="https://drive.google.com/file/d/1rbK71omqTGGb-5aGmrCw-M7C-N2GrsDv/view?usp=sharing" class="nss-link2" target="_blank" tabindex="19">Resume</a> and shoot me an email at <a href="mailto:taylorbailey@protonmail.com?Subject=Hello%20Taylor!" target="_top" class="nss-link2" tabindex="20">taylorbailey@protonmail.com</a>.</p>
                         <p>I can't wait to see what we will make together!</p><!-- /About Me Text -->
                     </div><!-- /About Me Column -->
                 </div><!-- /About Section Row -->
