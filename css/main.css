@@ -235,7 +235,8 @@ nav li a {
 
 .uxButton {
   position: relative;
-  left: 20%; }
+  left: 20%;
+  top: -10%; }
 
 .textRotator {
   transform: rotate(-45deg);
