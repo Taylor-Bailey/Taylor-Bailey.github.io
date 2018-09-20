@@ -235,7 +235,8 @@ nav li a {
 
 .uxButton {
   position: relative;
-  left: 20%; }
+  left: 20%;
+  top: -10%; }
 
 .textRotator {
   transform: rotate(-45deg);
@@ -395,9 +396,21 @@ carousel-indicators li:focus {
 .darkBlueText {
   color: #2A7BFF; }
 
+@media (max-width: 1492px) {
+  .parallax {
+    background-position-x: -5rem; } }
 @media (min-width: 1400px) {
   .container {
     max-width: 1350px; } }
+@media (max-width: 1175px) {
+  .parallax {
+    background-position-x: -11rem; } }
+@media (min-width: 1052px) {
+  .parallax {
+    background-position-x: -15rem; } }
+@media (min-width: 991px) {
+  .parallax {
+    background-position-x: -15rem; } }
 @media (max-width: 991px) {
   .capstone-1-description {
     margin-top: 9rem;
@@ -410,7 +423,23 @@ carousel-indicators li:focus {
     text-align: center; }
 
   .pantry-mockup {
-    left: 0 !important; } }
+    left: 0 !important; }
+
+  #techIcons {
+    margin-left: auto;
+    margin-right: auto; }
+
+  .parallax {
+    background-position-x: 0 !important;
+    margin-top: 3rem; }
+
+  .personaQuote {
+    padding: 0 !important;
+    margin: 0 !important; }
+    .personaQuote h3 {
+      margin-top: 3rem;
+      text-align: center;
+      display: block; } }
 @media (min-width: 766px) {
   .carouselSelector h2 {
     font-size: 2.25rem; } }
@@ -451,7 +480,10 @@ carousel-indicators li:focus {
 
   .nav-link {
     display: inline;
-    margin: 0; } }
+    margin: 0; }
+
+  .parallax {
+    background-attachment: scroll !important; } }
 @media (max-width: 475px) {
   h1 {
     font-size: 3rem;
@@ -554,7 +586,6 @@ carousel-indicators li:focus {
   height: 20rem;
   width: 20rem;
   background-attachment: fixed;
-  background-position-x: -7rem;
   background-position-y: 1rem;
   background-repeat: no-repeat;
   background-size: contain; }
