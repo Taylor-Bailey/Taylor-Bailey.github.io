@@ -3,6 +3,9 @@ body {
   font-family: "Roboto", "Arial";
   background-color: #fcfcfc;
   color: #3b494c; }
+  body ::selection {
+    color: #fcfcfc;
+    background: #2A7BFF; }
 
 h1, h2, h3, h4 {
   font-family: "Titillium Web"; }
@@ -536,6 +539,10 @@ carousel-indicators li:focus {
 @media (min-width: 240px) {
   h1 {
     text-align: center; } }
+.pantry-ux ::selection {
+  color: white;
+  background: #ec411f; }
+
 .app-logo {
   display: block;
   width: 180px;
