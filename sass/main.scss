@@ -17,6 +17,10 @@ body {
     font-family: "Roboto", "Arial";
     background-color: $white;
     color: $black;
+    ::selection{
+        color: $white;
+        background: $darkblue;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -529,7 +533,6 @@ carousel-indicators li:focus{
     .navbar-toggler {
         margin-left: auto;
     }
-
 }
 
 @media (min-width:1052px){
@@ -689,6 +692,12 @@ carousel-indicators li:focus{
 }
 
 //Pantry Page//
+.pantry-ux{
+    ::selection {
+        color: white;
+        background: #ec411f;
+    }
+}
 
 .app-logo {
 display: block;
