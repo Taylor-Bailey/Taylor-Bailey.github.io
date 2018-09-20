@@ -407,7 +407,8 @@ carousel-indicators li:focus {
     background-position-x: -11rem; } }
 @media (min-width: 1052px) {
   .parallax {
-    background-position-x: -15rem; } }
+    background-position-x: -15rem;
+    height: 20rem !important; } }
 @media (min-width: 991px) {
   .parallax {
     background-position-x: -15rem; } }
@@ -483,7 +484,8 @@ carousel-indicators li:focus {
     margin: 0; }
 
   .parallax {
-    background-attachment: scroll !important; } }
+    background-attachment: scroll !important;
+    height: 20rem !important; } }
 @media (max-width: 475px) {
   h1 {
     font-size: 3rem;
@@ -497,7 +499,19 @@ carousel-indicators li:focus {
 
   .pantry-mockup {
     height: 90%;
-    bottom: -3% !important; } }
+    bottom: -3% !important; }
+
+  .capstone-1-description {
+    margin-top: 3rem; }
+
+  .pantry-intro, .red-rectangle {
+    margin-bottom: 0 !important; }
+
+  .personaQuote h3 {
+    margin-top: 0 !important; }
+
+  .parallax {
+    height: 16rem !important; } }
 @media (max-width: 405px) {
   .carousel-indicators li {
     margin: .2rem  !important; }

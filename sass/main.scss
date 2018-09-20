@@ -528,6 +528,7 @@ carousel-indicators li:focus{
 @media (min-width:1052px){
     .parallax {
         background-position-x: -15rem;
+        height: 20rem !important;
     }
 }
 
@@ -622,6 +623,7 @@ carousel-indicators li:focus{
     }
     .parallax{
         background-attachment: scroll !important;
+        height: 20rem !important;
     }
 }
 
@@ -639,6 +641,18 @@ carousel-indicators li:focus{
     .pantry-mockup{
         height: 90%;
         bottom: -3% !important;
+    }
+    .capstone-1-description{
+        margin-top: 3rem;
+    }
+    .pantry-intro, .red-rectangle{
+        margin-bottom: 0 !important;
+    }
+    .personaQuote h3 {
+        margin-top: 0 !important;
+    }
+    .parallax{
+        height: 16rem !important;
     }
 }
 @media (max-width: 405px) {
