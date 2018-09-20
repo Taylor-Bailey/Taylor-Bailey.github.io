@@ -404,7 +404,13 @@ carousel-indicators li:focus {
     max-width: 1350px; } }
 @media (max-width: 1175px) {
   .parallax {
-    background-position-x: -11rem; } }
+    background-position-x: -11rem; }
+
+  .navBrand {
+    display: none; }
+
+  .navbar-toggler {
+    margin-left: auto; } }
 @media (min-width: 1052px) {
   .parallax {
     background-position-x: -15rem;
