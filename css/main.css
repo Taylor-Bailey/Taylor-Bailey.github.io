@@ -520,7 +520,10 @@ carousel-indicators li:focus {
     margin-top: 0 !important; }
 
   .parallax {
-    height: 16rem !important; } }
+    height: 16rem !important; }
+
+  .block-quote {
+    font-size: 1.4rem !important; } }
 @media (max-width: 405px) {
   .carousel-indicators li {
     margin: .2rem  !important; }
@@ -632,5 +635,37 @@ carousel-indicators li:focus {
 .barFill {
   height: 100%;
   background-color: #ec411f; }
+
+.wireframes-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.image-container {
+  position: relative;
+  width: 200px;
+  max-width: 50%;
+  height: 300px;
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transition: .4s; }
+  .image-container img {
+    position: absolute;
+    width: 100%;
+    transition: .4s; }
+
+.image-container:hover img:nth-child(3) {
+  transform: translate(30px, -30px);
+  opacity: 1; }
+
+.image-container:hover img:nth-child(2) {
+  transform: translate(15px, -15px);
+  opacity: .6; }
+
+.image-container:hover img:nth-child(1) {
+  opacity: .2;
+  box-shadow: -1px 3px 15px rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=main.css.map */
