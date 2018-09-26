@@ -836,7 +836,6 @@ margin: auto;
     }
 }
 
-
 .image-container:hover img:nth-child(3) {
     transform: translate(30px, -30px);
     opacity: 1;
@@ -848,4 +847,26 @@ margin: auto;
 .image-container:hover img:nth-child(1) {
     opacity: .2;
     box-shadow: -1px 3px 15px rgba(0,0,0,0.6)
+}
+
+.thank-you {
+    background: #ec411f;
+    color: white;
+    width: 100%;
+    margin-top: 5rem;
+    a {
+        color: white;
+    }
+}
+
+#pantry-footer {
+    background: #ec411f;
+    color: white;
+    .contact{
+        filter: brightness(95%);        
+    }
+    .contact:hover {
+        filter: brightness(100%) drop-shadow(-1px 3px 15px rgba(119, 0, 55, 0.4));
+        transition: .3s;
+    }
 }
