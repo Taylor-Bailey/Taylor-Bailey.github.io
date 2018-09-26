@@ -46,14 +46,12 @@ h3 {
 }
 
 //Landing Div//
+.name-plate {
+    align-items: center;
+}
 .landingContainer {
     margin-bottom: 3em;
     background-color: $white;
-}
-
-.tux {
-    display: block;
-    margin: 2rem auto;
 }
 
 .custom-toggler .navbar-toggler-icon {
